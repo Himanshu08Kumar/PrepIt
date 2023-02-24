@@ -100,7 +100,7 @@ public class Register extends AppCompatActivity {
     }
 
     private void sendUserToNextActivity() {
-        Intent intent = new Intent(Register.this,HomeActivity.class);
+        Intent intent = new Intent(Register.this,login.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
