@@ -13,6 +13,12 @@
         android:theme="@style/Theme.ProjectFinal"
         tools:targetApi="31">
         <activity
+            android:name=".codingQnActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".codingQnActivity2"
+            android:exported="false" />
+        <activity
             android:name=".codingQnActivity"
             android:exported="false" />
         <activity

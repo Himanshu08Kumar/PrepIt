@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/plain2"
-    tools:context=".codingQnActivity">
+    tools:context=".codingQnActivity2">
 
     <TextView
         android:id="@+id/title"
@@ -33,37 +33,37 @@
         android:columnCount="2"
         android:rowCount="3">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/c"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_row="0"
-        android:layout_rowWeight="1"
-        android:layout_column="0"
-        android:layout_columnWeight="1"
-        android:layout_gravity="fill"
-        app:cardBackgroundColor="#29FFFFFF"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="8dp"
-        app:cardUseCompatPadding="true">
-
-        <LinearLayout
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical|center"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#29FFFFFF"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="C"
-                android:textSize="35dp"
-                android:textAlignment="center"
-                android:textColor="#fff"
-                android:textStyle="bold" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+                android:layout_gravity="center_vertical|center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:textSize="35dp"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cp"
@@ -162,4 +162,5 @@
         </androidx.cardview.widget.CardView>
 
     </GridLayout>
+
 </RelativeLayout>
