@@ -34,6 +34,10 @@ public class mockInActivity extends AppCompatActivity implements View.OnClickLis
                 i= new Intent(this, mockActivity2.class);
                 startActivity(i);
                 break;
+            case R.id.test3:
+                i= new Intent(this, mockActivity3.class);
+                startActivity(i);
+                break;
 
         }
     }
