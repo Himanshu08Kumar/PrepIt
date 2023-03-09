@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.projectfinal">
+    package="com.example.projectfinal" >
 
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
+        android:label="PrepIT"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectFinal"
-        tools:targetApi="31">
+        tools:targetApi="31" >
+        <activity
+            android:name=".mockActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".mockActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".mockInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".codingQnActivity5"
+            android:exported="false" />
+        <activity
+            android:name=".codingQnActivity4"
+            android:exported="false" />
         <activity
             android:name=".codingQnActivity3"
             android:exported="false" />
@@ -38,7 +54,7 @@
             android:exported="false" />
         <activity
             android:name=".splash"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

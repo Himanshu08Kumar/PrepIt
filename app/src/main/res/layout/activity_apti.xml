@@ -37,37 +37,10 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/opt1"
+            android:id="@+id/ans"
             android:layout_margin="5dp"
             android:backgroundTint="#40FFFFFF"
-            android:text="Option 1"
-            android:textColor="#fff"
-            />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/opt2"
-            android:layout_margin="5dp"
-            android:backgroundTint="#40FFFFFF"
-            android:text="Option 2"
-            android:textColor="#fff"
-            />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/opt3"
-            android:layout_margin="5dp"
-            android:backgroundTint="#40FFFFFF"
-            android:text="Option 3"
-            android:textColor="#fff"
-            />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/opt4"
-            android:layout_margin="5dp"
-            android:backgroundTint="#40FFFFFF"
-            android:text="Option 4"
+            android:text="Answer"
             android:textColor="#fff"
             />
 
@@ -77,7 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/submitBtn"
-        android:text="Submit"
+        android:text="Next Question"
         android:layout_below="@id/choice"
         android:layout_marginTop="20dp"/>
 
