@@ -46,6 +46,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.interview:
                 clicked_btn("https://prepinsta.com/interview-experience/");
+                break;
 
             case R.id.mock:
                 i = new Intent(this,mockInActivity.class);

@@ -14,6 +14,9 @@
         android:theme="@style/Theme.ProjectFinal"
         tools:targetApi="31">
         <activity
+            android:name=".mockActivity4"
+            android:exported="false" />
+        <activity
             android:name=".mockActivity3"
             android:exported="false" />
         <activity
