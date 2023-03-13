@@ -11,23 +11,21 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class aptiActivity extends AppCompatActivity implements View.OnClickListener{
-
+public class aptiActivity1 extends AppCompatActivity implements View.OnClickListener {
     TextView totalQuestionsTextView;
     TextView questionTextView;
     Button opt1, opt2, opt3, opt4;
     Button submitBtn;
 
     int score = 0;
-    int totalQuestion = questionAnswer.question.length;
+    int totalQuestion = trainsApti.question.length;
     int currentQuestionIndex = 0;
     String selectedAnswer = "";
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_apti);
+        setContentView(R.layout.activity_apti2);
 
         totalQuestionsTextView =findViewById(R.id.total_question);
         questionTextView = findViewById(R.id.question);
@@ -79,11 +77,11 @@ public class aptiActivity extends AppCompatActivity implements View.OnClickListe
             return;
         }
 
-        questionTextView.setText(questionAnswer.question[currentQuestionIndex]);
-        opt1.setText(questionAnswer.choices[currentQuestionIndex][0]);
-        opt2.setText(questionAnswer.choices[currentQuestionIndex][1]);
-        opt3.setText(questionAnswer.choices[currentQuestionIndex][2]);
-        opt4.setText(questionAnswer.choices[currentQuestionIndex][3]);
+        questionTextView.setText(trainsApti.question[currentQuestionIndex]);
+        opt1.setText(trainsApti.choices[currentQuestionIndex][0]);
+        opt2.setText(trainsApti.choices[currentQuestionIndex][1]);
+        opt3.setText(trainsApti.choices[currentQuestionIndex][2]);
+        opt4.setText(trainsApti.choices[currentQuestionIndex][3]);
     }
     void finishQuiz(){
         String passStatus = "";

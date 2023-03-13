@@ -35,7 +35,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         Intent i;
         switch (v.getId()){
             case R.id.aptitude:
-                i= new Intent(this,aptiActivity.class);
+                i= new Intent(this,AptiCardActivity.class);
                 startActivity(i);
                 break;
 

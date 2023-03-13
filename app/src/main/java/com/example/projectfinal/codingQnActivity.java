@@ -1,50 +1,54 @@
 package com.example.projectfinal;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
-public class codingQnActivity extends AppCompatActivity {
+public class codingQnActivity extends AppCompatActivity implements View.OnClickListener {
+    public CardView C,Cp,Java,Python;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coding_qn);
-        findViewById(R.id.python).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                clicked_btn("https://prepinsta.com/python-program/to-find-prime-numbers-between-1-too-100/");
-            }
-        });
 
-        findViewById(R.id.java).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                clicked_btn("https://prepinsta.com/java-program/find-prime-number-between-1-to-100/");
-            }
-        });
+        C = (CardView) findViewById(R.id.c);
+        Cp = (CardView)findViewById(R.id.cp);
+        Java = (CardView)findViewById(R.id.java);
+        Python = (CardView)findViewById(R.id.python);
 
-        findViewById(R.id.cp).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                clicked_btn("https://prepinsta.com/cpp-program/prime-number-between-1-to-100/");
-            }
-        });
+        C.setOnClickListener(this);
+        Cp.setOnClickListener(this);
+        Java.setOnClickListener(this);
+        Python.setOnClickListener(this);
 
-        findViewById(R.id.c).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                clicked_btn("https://prepinsta.com/c-program/prime-number-between-1-to-100/");
-            }
-        });
     }
-    public void clicked_btn(String uri)
-    {
-        Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse(uri));
-        startActivity(intent);
+
+    public void onClick(View v) {
+        Intent i;
+        switch (v.getId()) {
+            case R.id.c:
+                i = new Intent(this, CAnswerActivity.class);
+                startActivity(i);
+                break;
+            case R.id.java:
+                i = new Intent(this, javaAnswerActivity.class);
+                startActivity(i);
+                break;
+            case R.id.cp:
+                i = new Intent(this, CpAnswerActivity.class);
+                startActivity(i);
+                break;
+
+            case R.id.python:
+                i = new Intent(this, pythonAnswerActivity.class);
+                startActivity(i);
+                break;
+
+        }
     }
 }

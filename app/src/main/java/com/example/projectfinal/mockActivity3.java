@@ -1,5 +1,7 @@
 package com.example.projectfinal;
 
+import static com.example.projectfinal.mockQuestionAnswer3.correctAnswer;
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -33,6 +35,52 @@ public class mockActivity3 extends AppCompatActivity implements View.OnClickList
         opt4 = findViewById(R.id.opt4);
         submitBtn =findViewById(R.id.submitBtn);
 
+//        opt1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                for (String answer : correctAnswer) { // loop through the correct answers
+//                    if (selectedAnswer.equals(answer)) { // check if the clicked answer is correct
+//                        opt1.setBackgroundColor(Color.GREEN); // set button color to green
+//                        return; // exit the loop if a match is found
+//                    }
+//                }
+//            }
+//        });
+//
+//        opt2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                for (String answer : correctAnswer) { // loop through the correct answers
+//                    if (selectedAnswer.equals(answer)) { // check if the clicked answer is correct
+//                        opt2.setBackgroundColor(Color.GREEN); // set button color to green
+//                        return; // exit the loop if a match is found
+//                    }
+//                }
+//            }
+//        });
+//
+//        opt3.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                for (String answer : correctAnswer) { // loop through the correct answers
+//                    if (selectedAnswer.equals(answer)) { // check if the clicked answer is correct
+//                        opt3.setBackgroundColor(Color.GREEN); // set button color to green
+//                        return; // exit the loop if a match is found
+//                    }
+//                }
+//            }
+//        });
+//        opt4.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                for (String answer : correctAnswer) { // loop through the correct answers
+//                    if (selectedAnswer.equals(answer)) { // check if the clicked answer is correct
+//                        opt4.setBackgroundColor(Color.GREEN); // set button color to green
+//                        return; // exit the loop if a match is found
+//                    }
+//                }
+//            }
+//        });
         opt1.setOnClickListener(this);
         opt2.setOnClickListener(this);
         opt3.setOnClickListener(this);
@@ -52,16 +100,21 @@ public class mockActivity3 extends AppCompatActivity implements View.OnClickList
 
         Button clickButton = (Button) v;
         if(clickButton.getId() == R.id.submitBtn){
-            if(selectedAnswer.equals(mockQuestionAnswer3.correctAnswer[currentQuestionIndex])){
+            if(selectedAnswer.equals(correctAnswer[currentQuestionIndex])) {
                 score++;
             }
+//            for (String answer : correctAnswer) { // loop through the correct answers
+//                    if (selectedAnswer.equals(answer))
+//                        selectedAnswer.setBackgroundColor(Color.GREEN);
+//
+//            }
             currentQuestionIndex++;
             loadNewQuestion();
-
 
         }else{
             selectedAnswer = clickButton.getText().toString();
             clickButton.setBackgroundColor(Color.BLACK);
+
         }
 
     }
