@@ -1,5 +1,6 @@
 package com.example.projectfinal;
 
+
 import static com.example.projectfinal.questionAnswer.correctAnswer;
 
 import androidx.appcompat.app.AlertDialog;
@@ -55,7 +56,7 @@ public class aptiActivity1 extends AppCompatActivity implements View.OnClickList
 
         Button clickButton = (Button) v;
         if(clickButton.getId() == R.id.submitBtn) {
-            if (selectedAnswer.equals(correctAnswer[currentQuestionIndex])) {
+            if (selectedAnswer.equals(trainsApti.correctAnswer[currentQuestionIndex])) {
 
                 score++;
             }
