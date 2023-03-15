@@ -14,6 +14,15 @@
         android:theme="@style/Theme.ProjectFinal"
         tools:targetApi="31">
         <activity
+            android:name=".ciscoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".companyListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".aptiActivity3"
+            android:exported="false" />
+        <activity
             android:name=".aptiActivity2"
             android:exported="false" />
         <activity

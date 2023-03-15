@@ -45,7 +45,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.interview:
-                clicked_btn("https://prepinsta.com/interview-experience/");
+                i= new Intent(this,companyListActivity.class);
+                startActivity(i);
                 break;
 
             case R.id.mock:
@@ -53,11 +54,5 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(i);
                 break;
         }
-    }
-    public void clicked_btn(String uri)
-    {
-        Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse(uri));
-        startActivity(intent);
     }
 }
