@@ -34,6 +34,11 @@ public class companyListActivity extends AppCompatActivity implements View.OnCli
                 i = new Intent(this, ciscoActivity.class);
                 startActivity(i);
                 break;
+
+            case R.id.goldman:
+                i = new Intent(this, goldmanActivity.class);
+                startActivity(i);
+                break;
         }
     }
 }
