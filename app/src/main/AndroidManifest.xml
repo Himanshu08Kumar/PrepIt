@@ -14,7 +14,25 @@
         android:theme="@style/Theme.ProjectFinal"
         tools:targetApi="31">
         <activity
-            android:name=".goldmanActivity"
+            android:name=".cognizantActivity"
+            android:exported="false" />
+        <activity
+            android:name=".infosysActivity"
+            android:exported="false" />
+        <activity
+            android:name=".accentureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wiproActivity"
+            android:exported="false" />
+        <activity
+            android:name=".deloitteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tcsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tcsNinjaActivity"
             android:exported="false" />
         <activity
             android:name=".ciscoActivity"

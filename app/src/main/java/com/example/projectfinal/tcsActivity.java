@@ -8,13 +8,13 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class goldmanActivity extends AppCompatActivity {
+public class tcsActivity extends AppCompatActivity {
     private Csol answerStorage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_goldman);
+        setContentView(R.layout.activity_tcs);
 
         answerStorage = new Csol();
 
@@ -91,11 +91,12 @@ public class goldmanActivity extends AppCompatActivity {
                 "DELETE FROM students WHERE StudentName='Jenny';\n");
 
 
+
         ArrayList<String> answers = answerStorage.getAnswers();
         String answersString = TextUtils.join("\n", answers);
 
         // Display the answers in a TextView
-        TextView textView = findViewById(R.id.goldman);
+        TextView textView = findViewById(R.id.tcs);
         textView.setText(answersString);
     }
 }
