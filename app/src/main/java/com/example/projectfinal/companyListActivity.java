@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class companyListActivity extends AppCompatActivity implements View.OnClickListener{
-    public CardView cisco, tcsNinja, tcs, deloitte, wipro, accenture, infosys, cognizant;
+    public CardView cisco, tcsNinja, tcs, deloitte, wipro, accenture, infosys, cognizant, capgemini, mindtree;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +22,8 @@ public class companyListActivity extends AppCompatActivity implements View.OnCli
         accenture = (CardView) findViewById(R.id.accenture);
         infosys = (CardView) findViewById(R.id.infosys);
         cognizant = (CardView)findViewById(R.id.cognizant);
+        capgemini = (CardView)findViewById(R.id.capgemini);
+        mindtree = (CardView)findViewById(R.id.mindtree);
 
         cisco.setOnClickListener(this);
         tcsNinja.setOnClickListener(this);
@@ -31,7 +33,8 @@ public class companyListActivity extends AppCompatActivity implements View.OnCli
         accenture.setOnClickListener(this);
         infosys.setOnClickListener(this);
         cognizant.setOnClickListener(this);
-
+        capgemini.setOnClickListener(this);
+        mindtree.setOnClickListener(this);
 
     }
     public void onClick(View v) {
@@ -74,6 +77,16 @@ public class companyListActivity extends AppCompatActivity implements View.OnCli
 
             case R.id.cognizant:
                 i = new Intent(this, cognizantActivity.class);
+                startActivity(i);
+                break;
+
+            case R.id.capgemini:
+                i = new Intent(this, capgeminiActivity.class);
+                startActivity(i);
+                break;
+
+            case R.id.mindtree:
+                i = new Intent(this, mindtreeActivity.class);
                 startActivity(i);
                 break;
         }
