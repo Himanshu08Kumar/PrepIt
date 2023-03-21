@@ -634,6 +634,106 @@ public class pythonAnswerActivity extends AppCompatActivity {
                 "\n" +
                 "print(\"Odd Elements count : \")\n" +
                 "print(countodd)\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q41. Check whether a character is a vowel or consonant \n"+"\n c = 'a'\n" +
+                "\n" +
+                "# checking for vowels\n" +
+                "if c == 'a' or c == 'e' or c == 'i' or c == 'o' or c == 'u' or c == 'A' or c == 'E' or c == 'I' or c == 'O' or c == 'U':\n" +
+                "    print(c, \"is a vowel\")  # condition true input is vowel\n" +
+                "else:\n" +
+                "    print(c, \"is a consonant\")  # condition true input is consonant\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q42. Check whether a character is a alphabet or not\n"+"\n ch = 'z'\n" +
+                "\n" +
+                "# basic logic\n" +
+                "if 'a' <= ch <= 'z' or 'A' <= ch <= 'Z':\n" +
+                "    print(\"The  character\", ch, \"is an Alphabet\")\n" +
+                "else:\n" +
+                "    print(\"The  character\", ch, \"is not an Alphabet\")\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q43. Count the number of vowels \n"+"\n String = input('Enter the string :')\n" +
+                "count = 0\n" +
+                "#to check for less conditions\n" +
+                "#keep string in lowercase\n" +
+                "String = String.lower()\n" +
+                "for i in String:\n" +
+                "    if i == 'a' or i == 'e' or i == 'i' or i == 'o' or i == 'u':\n" +
+                "        #if True\n" +
+                "        count+=1\n" +
+                "#check if any vowel found\n" +
+                "if count == 0:\n" +
+                "    print('No vowels found')\n" +
+                "else:\n" +
+                "    print('Total vowels are :' + str(count))\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q44. Remove the vowels from a String\n"+"\n string = \"PrepInsta\"\n" +
+                "\n" +
+                "vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']\n" +
+                "result = \"\"\n" +
+                "\n" +
+                "for i in range(len(string)):\n" +
+                "    if string[i] not in vowels:\n" +
+                "        result = result + string[i]\n" +
+                "\n" +
+                "print(\"\\nAfter removing Vowels: \", result)\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q45. Check if the given string is Palindrome or not\n"+"\n input_string = 'civic'\n" +
+                "rev = input_string[::-1]\n" +
+                "\n" +
+                "if input_string == rev:\n" +
+                "    print(rev + \" is Palindrome\")\n" +
+                "else:\n" +
+                "    print(rev + \" is not Palindrome\")\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q46. Print the given string in reverse order\n"+"\n #using slicing:\n" +
+                "string = \"Hello world\"\n" +
+                "print(string[::-1])\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q47. Remove all characters from string except alphabets\n"+"\n String1 = \"#Justice!For@Chutki123\"\n" +
+                "#initialize empty String\n" +
+                "String2 = ''\n" +
+                "for i in String1:\n" +
+                "    #check for alphabets\n" +
+                "    if (ord(i) >= 65 and ord(i) <= 90) or (ord(i) >= 97 and ord(i) <= 122):\n" +
+                "        #concatenate to empty string\n" +
+                "        String2+=i\n" +
+                "print('Alphabets in string are :' + String2)\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q48. Remove spaces from a string\n"+"\n String = \"PrepInsta is fabulous\"\n" +
+                "\n" +
+                "#Use join function \n" +
+                "String = \"\".join(String.split()) \n" +
+                "\n" +
+                "#print String \n" +
+                "print(\"After removing spaces string is :\",String)\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q49. Remove brackets from an algebraic expression\n"+"\n Exp = \"(a-b)+[c*d]+{e/f}\"\n" +
+                "#initialize an empty string \n" +
+                "Equation = ''\n" +
+                "#traversing through string\n" +
+                "for i in Exp:\n" +
+                "    #checking for brackets\n" +
+                "    if ord(i) == 41 or ord(i) == 40 or ord(i) == 91 or ord(i) == 93 or ord(i) == 123 or ord(i) == 125:\n" +
+                "        #If True\n" +
+                "        pass\n" +
+                "    else:\n" +
+                "        #if False\n" +
+                "        #add it to empty String\n" +
+                "        Equation = Equation + i\n" +
+                " #print the string\n" +
+                "print(' String without bracket is ' + Equation)\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q50. Count the sum of numbers in a string\n"+"\n String = \"Daya123Ben456\"\n" +
+                "#initialize integer variable\n" +
+                "sum1 = 0\n" +
+                "for i in String:\n" +
+                "    #check if values lies between range of numbers or not\n" +
+                "    #according to ascii tale\n" +
+                "    if ord(i) >= 48 and ord(i) <= 57:\n" +
+                "        #convert it to integer and add\n" +
+                "        sum1 = sum1 + int(i)\n" +
+                "print('Sum is :' + str(sum1))\n");
+
 
         ArrayList<String> answers = answerStorage.getAnswers();
         String answersString = TextUtils.join("\n", answers);

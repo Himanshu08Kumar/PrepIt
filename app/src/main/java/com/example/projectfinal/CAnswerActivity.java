@@ -1194,9 +1194,279 @@ public class CAnswerActivity extends AppCompatActivity {
                 "}\n");
 
         answerStorage.addAnswer("<------------------------------------------------------>\n");
-        answerStorage.addAnswer("Q41. \n"+"\n \n");
+        answerStorage.addAnswer("Q41. Check whether a character is a vowel or consonant \n"+"\n #include <stdio.h>\n" +
+                "\n" +
+                "// main function\n" +
+                "int main()\n" +
+                "{\n" +
+                "    char c='F';\n" +
+                "\n" +
+                "    \n" +
+                "        \n" +
+                "    //checking for vowels\t\n" +
+                "    if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'||\n" +
+                "    c=='A'||c=='E'||c=='I'||c=='O'||c=='U')\n" +
+                "    {\n" +
+                "        printf(\"%c is a vowel\", c);  // condition true input is vowel\n" +
+                "    }\n" +
+                "    else\n" +
+                "    {\n" +
+                "        printf(\"%c is a consonant\", c);  // condition true input is consonant\n" +
+                "    }\n" +
+                "\n" +
+                "    return 0;\n" +
+                "}\n");
 
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q42. Check whether a character is a alphabet or not\n"+"\n #include <stdio.h>\n" +
+                "int main()\n" +
+                "{\n" +
+                "    char ch='9';\n" +
+                "\n" +
+                " \n" +
+                "    if( (ch>='a' && ch<='z') || (ch>='A' && ch<='Z'))\n" +
+                "        printf(\"The inserted character %c is an Alphabet\", ch);\n" +
+                "   \n" +
+                "    else\n" +
+                "        printf(\"The entered character %c is not an Alphabet\", ch);\n" +
+                "\n" +
+                "    return 0;\n" +
+                "}\n");
 
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q43. Count the number of vowels \n"+"\n #include <stdio.h>\n" +
+                "#include <ctype.h>\n" +
+                " \n" +
+                "int main()\n" +
+                "{\n" +
+                "    // Initializing variable.\n" +
+                "    char str[100];  \n" +
+                "    int i, vowels = 0;\n" +
+                "    \n" +
+                "    // Accepting input.\n" +
+                "    printf(\"Enter the string: \");\n" +
+                "    // best way to read string rather than gets/fgets\n" +
+                "    scanf(\"%[^\\n]s\",&str);\n" +
+                "    \n" +
+                "    //Initializing for loop. \n" +
+                "    for(i = 0; str[i]; i++)  \n" +
+                "    {\n" +
+                "        //Counting the vowels.\n" +
+                "        if(str[i]=='a'|| str[i]=='e'||str[i]=='i'||\n" +
+                "           str[i]=='o'|| str[i]=='u'||str[i]=='A'||\n" +
+                "           str[i]=='E'||str[i]=='I'||str[i]=='O' ||str[i]=='U')\n" +
+                "        {\n" +
+                "            vowels++;\n" +
+                "        }\n" +
+                "    }\n" +
+                " \t\n" +
+                "    //Printing the count of vowels.\n" +
+                "    printf(\"Total number of vowels: = %d\\n\",vowels);\n" +
+                "    \n" +
+                "    return 0;\n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q44. Remove the vowels from a String\n"+"\n #include <stdio.h>\n" +
+                "#include <stdlib.h>\n" +
+                "\n" +
+                "int main() {\n" +
+                "    // Initializing variable.\n" +
+                "    char str[100];\n" +
+                "    int i, j, len = 0;\n" +
+                "\n" +
+                "    // Accepting input.\n" +
+                "    printf(\"Enter a string : \");\n" +
+                "    // gets(str);\n" +
+                "    scanf(\"%s\", str);\n" +
+                "\n" +
+                "    len = strlen(str);\n" +
+                "    // Accepting input.\n" +
+                "\n" +
+                "    for (i = 0; i < len; i++) {\n" +
+                "        // Checking vowels.\n" +
+                "        if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' ||\n" +
+                "            str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U') {\n" +
+                "            // Deleting vowels.\n" +
+                "            for (j = i; j < len; j++) {\n" +
+                "                // Storing string without vowels.\n" +
+                "                str[j] = str[j + 1];\n" +
+                "            }\n" +
+                "            i--;\n" +
+                "            len--;\n" +
+                "        }\n" +
+                "        str[len + 1] = '\\0';\n" +
+                "    }\n" +
+                "   printf(\"After deleting the vowels, the string will be : %s\", str);\n" +
+                "   return 0;\n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q45. Check if the given string is Palindrome or not\n"+"\n #include <stdio.h>\n" +
+                "#include <string.h>\n" +
+                "\n" +
+                "\n" +
+                "int main() \n" +
+                "{\n" +
+                "    char str[10] = \"naman\";\n" +
+                "    int i, len, flag = 0;\n" +
+                "    \n" +
+                "    len = strlen(str);\n" +
+                "\n" +
+                "    for (i = 0; i < len; i++) \n" +
+                "    {\n" +
+                "        // Checking if string is palindrome or not\n" +
+                "        if (str[i] != str[len - i - 1]) {\n" +
+                "            flag = 1;\n" +
+                "            break;\n" +
+                "        }\n" +
+                "    }\n" +
+                "\n" +
+                "    if (flag)\n" +
+                "        printf(\"%s is not palindrome\", str);\n" +
+                "    else\n" +
+                "        printf(\"%s is palindrome\", str);\n" +
+                "        \n" +
+                "    return 0;\n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q46. Print the given string in reverse order\n"+"\n #include <stdio.h>\n" +
+                "\n" +
+                "#include <string.h>  \n" +
+                "\n" +
+                "// function definition of the revstr() \n" +
+                "void revstr(char *str1) \n" +
+                "{ \n" +
+                "  // declare variable \n" +
+                "  int i, len, temp; \n" +
+                "  len = strlen(str1); // use strlen() to get the length of str string \n" +
+                "\n" +
+                "  // use for loop to iterate the string \n" +
+                "  for (i = 0; i < len/2; i++) \n" +
+                "  { \n" +
+                "  // temp variable use to temporary hold the string \n" +
+                "   temp = str1[i]; \n" +
+                "   str1[i] = str1[len - i - 1]; \n" +
+                "   str1[len - i - 1] = temp; \n" +
+                "  } \n" +
+                " } \n" +
+                "\n" +
+                "int main() \n" +
+                "{ \n" +
+                "  char str[50]=\"priyanka\"; // size of char string \n" +
+                "  pri\n" +
+                "\n" +
+                "  printf (\" \\n Before reversing the string: %s \\n\", str); \n" +
+                "\n" +
+                "  // call revstr() function \n" +
+                "  revstr(str); \n" +
+                "  printf (\" After reversing the string: %s\", str); \n" +
+                " }\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q47. Remove all characters from string except alphabets\n"+"\n #include <stdio.h>\n" +
+                "int main()\n" +
+                "{\n" +
+                "    //Initializing variable.\n" +
+                "    char str[100];\n" +
+                "    int i, j;\n" +
+                "    \n" +
+                "     //Accepting input.\n" +
+                "    printf(\" Enter a string : \");\n" +
+                "    gets(str);\n" +
+                "\n" +
+                "     //Iterating each character and removing non alphabetical characters.\n" +
+                "    for(i = 0; str[i] != '\\0'; ++i)\n" +
+                "    {\n" +
+                "        while (!( (str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z') || str[i] == '\\0') )\n" +
+                "        {\n" +
+                "            for(j = i; str[j] != '\\0'; ++j)\n" +
+                "            {\n" +
+                "                str[j] = str[j+1];\n" +
+                "            }\n" +
+                "            str[j] = '\\0'; \n" +
+                "        }\n" +
+                "    }\n" +
+                "     //Printing output.\n" +
+                "    printf(\" After removing non alphabetical characters the string is :\");\n" +
+                "    puts(str);\n" +
+                "    return 0;\n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q48. Remove spaces from a string\n"+"\n #include<stdio.h> \n" +
+                "using namespace std;\n" +
+                "// Function to remove all spaces from a given string\n" +
+                "void removeSpaces(char *str)\n" +
+                "{\n" +
+                "    // To keep track of non-space character count\n" +
+                "    int count = 0;\n" +
+                "    // Traverse the provided string. If the current character is not a space,\n" +
+                "    //move it to index 'count++'.\n" +
+                "    for (int i = 0; str[i]; i++)\n" +
+                "        if (str[i] != ' ')\n" +
+                "            str[count++] = str[i]; // here count is incremented\n" +
+                "    str[count] = '\\0';\n" +
+                "}\n" +
+                "// Driver program to test above function\n" +
+                "int main()\n" +
+                "{\n" +
+                "    char str[] = \"P re p i  n  sta \";\n" +
+                "    removeSpaces(str);\n" +
+                "    printf(\"%s\", str);\n" +
+                "    return 0;\n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q49. Remove brackets from an algebraic expression\n"+"\n #include<stdio.h>  \n" +
+                "int main()\n" +
+                "{\n" +
+                "    //Initializing variables.\n" +
+                "    char str[100] = \"Prep))insta\", str_no_spc[100];\n" +
+                "    int i=0, j=0 ;\n" +
+                "    \n" +
+                "    //Iterating each character of string.\n" +
+                "    while(str[i] != '\\0')\n" +
+                "    {\n" +
+                "        if(str[i] != '(' &&  str[i] != ')')//Excluding brackets.\n" +
+                "        {\n" +
+                "            str_no_spc[j++] = str[i];\n" +
+                "        }\n" +
+                "        i++;\n" +
+                "    }\n" +
+                "    str_no_spc[j] = '\\0';\n" +
+                "    \n" +
+                "    //Printing result.\n" +
+                "    printf(\"The string after removing all the spaces is:\\n%s\", str_no_spc);\n" +
+                "    return 0;\n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q50. Count the sum of numbers in a string\n"+"\n #include<stdio.h>  \n" +
+                "int main()\n" +
+                "{\n" +
+                "    //Initializing variables.\n" +
+                "    char str[100] = \"4PREP2INSTA6\";\n" +
+                "    int i,sum = 0;\n" +
+                "    \n" +
+                "    //Iterating each character through for loop.\n" +
+                "    for (i= 0; str[i] != '\\0'; i++)\n" +
+                "    {\n" +
+                "        if ((str[i] >= '0') && (str[i] <= '9'))  //Checking for numeric characters.\n" +
+                "        {\n" +
+                "            \n" +
+                "            sum += (str[i] - '0'); //Adding numeric characters.\n" +
+                "\n" +
+                "        }\n" +
+                "    }\n" +
+                "    //Printing result.\n" +
+                "    printf(\"Sum of all digits:\\n%d\", sum);\n" +
+                "    return 0; \n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q51. \n"+"\n \n");
 
 
         // Get the list of answers and convert it to a string

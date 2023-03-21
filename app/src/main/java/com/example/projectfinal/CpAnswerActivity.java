@@ -1110,9 +1110,277 @@ public class CpAnswerActivity extends AppCompatActivity {
                 "   }\n" +
                 "   cout<<\"Even Elements count : \" <<even_count<< \"\\nOdd Elements count : \" << odd_count;\n" +
                 "}\n");
-
-
-
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q41. Check whether a character is a vowel or consonant \n"+"\n #include<iostream>\n" +
+                "using namespace std;\n" +
+                "\n" +
+                "// main function\n" +
+                "int main()\n" +
+                "{\n" +
+                "    char c;\n" +
+                "\n" +
+                "    c='U';\n" +
+                "        \n" +
+                "    //checking for vowels\t\n" +
+                "    if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'||\n" +
+                "    c=='A'||c=='E'||c=='I'||c=='O'||c=='U')\n" +
+                "    {\n" +
+                "        cout << c << \" is a vowel\";  //condition true input is vowel\n" +
+                "    }\n" +
+                "    else\n" +
+                "    {\n" +
+                "        cout << c << \" is a consonant\";  //condition false input is consonant\n" +
+                "    }\n" +
+                "\n" +
+                "    return 0;\n" +
+                "}\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q42. Check whether a character is a alphabet or not\n"+"\n #include <iostream>\n" +
+                "using namespace std;\n" +
+                "int main()\n" +
+                "{\n" +
+                "    char ch='9';\n" +
+                " \n" +
+                "    if( (ch>='a' && ch<='z') || (ch>='A' && ch<='Z'))\n" +
+                "        cout<<\"The inserted character \" <<ch<<\" is an Alphabet\";\n" +
+                "   \n" +
+                "    else\n" +
+                "        cout<<\"The inserted character \" <<ch<<\" is not an Alphabet\";\n" +
+                "\n" +
+                "    return 0;\n" +
+                "}\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q43. Count the number of vowels \n"+"\n #include <iostream>\n" +
+                "#include <stdio.h>\n" +
+                "\n" +
+                "using namespace std;\n" +
+                "\n" +
+                "int main()\n" +
+                "{\n" +
+                "    char str[100] = \"prepinsta\";\n" +
+                "    int vowels = 0;\n" +
+                "    \n" +
+                "    // can also do str[i] != '\\0' in condition below both would work\n" +
+                "    for(int i = 0; str[i]; i++)  \n" +
+                "    {\n" +
+                "        if(str[i]=='a'|| str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u'\n" +
+                "        ||str[i]=='A'||str[i]=='E'||str[i]=='I'||str[i]=='O' ||str[i]=='U')\n" +
+                "        {\n" +
+                "\t\t    vowels++;\n" +
+                "        }\n" +
+                "    }\n" +
+                "    \n" +
+                "    cout << \"Total Vowels : \" << vowels;\n" +
+                "    \n" +
+                "    return 0;\n" +
+                "}\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q44. Remove the vowels from a String\n"+"\n #include <iostream>\n" +
+                "#include <stdio.h>\n" +
+                "using namespace std;\n" +
+                "\n" +
+                "int main()\n" +
+                "{\n" +
+                "\t// initializing variable\n" +
+                "\tchar str[100];\n" +
+                "\n" +
+                "\t// accepting input\n" +
+                "\tcout << \"Enter a string : \"; cin >> str;\n" +
+                "\t\n" +
+                "\tint len = strlen(str);\n" +
+                "\n" +
+                "\t// iterating the string\n" +
+                "\tfor(int i=0; i<len; i++)\n" +
+                "\t{   \n" +
+                "\t    // checking vowels.\n" +
+                "\t\tif(str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u'\n" +
+                "\t\t||str[i]=='A'||str[i]=='E'||str[i]=='I'||str[i]=='O'||str[i]=='U')\n" +
+                "\t\t{\n" +
+                "\n" +
+                "\t\t    // deleting vowels by shifting left all upcoming characters left \n" +
+                "\t\t\tfor(int j=i; j<len; j++)\n" +
+                "\t\t\t{\n" +
+                "\t\t\t\tstr[j]=str[j+1];\n" +
+                "\t\t\t}\n" +
+                "\t\ti--;\n" +
+                "\t\tlen--;\n" +
+                "\t\t}\n" +
+                "\t}\n" +
+                "\t// can directly print str\n" +
+                "\t// as '\\0' also shifted left as many times as vowels were found\n" +
+                "\tcout << \"After removing Vowels: \" << str;\n" +
+                "\n" +
+                "    return 0;\t\n" +
+                "}\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q45. Check if the given string is Palindrome or not\n"+"\n #include <iostream>\n" +
+                "#include <stdio.h> \n" +
+                "using namespace std;\n" +
+                "void Lower_case(char str[]){\n" +
+                "    int i = 0;\n" +
+                "    while (str[i] != '\\0')\n" +
+                "    {\n" +
+                "        if (str[i] > 64 && str[i] < 91)\n" +
+                "            str[i] += 32;\n" +
+                "        i++;\n" +
+                "    } \n" +
+                "}\n" +
+                "// A function to check if a string str is palindrome\n" +
+                "void CheckPalindrome(char str[]) {\n" +
+                "// Start from leftmost and rightmost corners of str\n" +
+                "int l = 0;\n" +
+                "int h = strlen(str) - 1;\n" +
+                "\n" +
+                "// Keep comparing characters while they are same\n" +
+                "Lower_case(str);\n" +
+                "\n" +
+                "while (h > l) {  \n" +
+                "      if (str[l++] != str[h--]) { \n" +
+                "           cout << \"The String \" << str << \" is not a palindrome\\n\";           \n" +
+                " return;      \n" +
+                "  }   \n" +
+                " }    \n" +
+                "cout << \"The String \" << str << \" is a palindrome\"; \n" +
+                "}\n" +
+                "// Driver program to test CheckPalindrome function int main() {    \n" +
+                "char str1[50] = \"naman\";  // size of char string    \n" +
+                "CheckPalindrome(str1);\n" +
+                "cout<<endl;\n" +
+                "char str2[50] = \"radar\";  // size of char string    \n" +
+                "CheckPalindrome(str2);\n" +
+                "return 0; \n" +
+                "}\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q46. Print the given string in reverse order\n"+"\n #include <iostream>\n" +
+                "#include <string.h>\n" +
+                "using namespace std;\n" +
+                "\n" +
+                "// function definition of the revstr()\n" +
+                "void revstr(char *str1) {\n" +
+                "    // declare variable\n" +
+                "    int i, len, temp;\n" +
+                "    len = strlen(str1);\n" +
+                "\n" +
+                "    // use strlen() to get the length of str string\n" +
+                "    // use or loop to iterate the string\n" +
+                "    for(i = 0;i < len/2;i++)\n" +
+                "    {\n" +
+                "        //temp variable use to temporary hold the string\n" +
+                "        temp = str1[i];\n" +
+                "        str1[i] = str1[len - i - 1];\n" +
+                "        str1[len - i - 1] = temp;\n" +
+                "    }\n" +
+                "}\n" +
+                "int main()\n" +
+                "{\n" +
+                "    char str[50] = \"Priyanka\";\n" +
+                "    cout << \"Before reversing the string: \" << str;\n" +
+                "\n" +
+                "    revstr(str);\n" +
+                "    \n" +
+                "    cout<< \"\\nAfter reversing the string: \" << str;\n" +
+                "    return 0;\n" +
+                "}\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q47. Remove all characters from string except alphabets\n"+"\n #include <iostream>\n" +
+                "using namespace std;\n" +
+                "int main()\n" +
+                "{\n" +
+                "    //Initializing variable.\n" +
+                "    char str[100];\n" +
+                "    int i, j;\n" +
+                "    \n" +
+                "    //Accepting input.\n" +
+                "    cout<<\"Enter a string : \";\n" +
+                "    gets(str);\n" +
+                "\n" +
+                "    //Iterating each character and removing non alphabetical characters.\n" +
+                "    for(i = 0; str[i] != '\\0'; ++i)\n" +
+                "    {\n" +
+                "        while (!( (str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z') || str[i] == '\\0') )\n" +
+                "        {\n" +
+                "            for(j = i; str[j] != '\\0'; ++j)\n" +
+                "            {\n" +
+                "                str[j] = str[j+1];\n" +
+                "            }\n" +
+                "            str[j] = '\\0'; \n" +
+                "        }\n" +
+                "    }\n" +
+                "    //Printing output.\n" +
+                "    cout<<\"After removing non alphabetical characters the string is :\";\n" +
+                "    puts(str);\n" +
+                "    return 0;\n" +
+                "}\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q48. Remove spaces from a string\n"+"\n #include <iostream>\n" +
+                "using namespace std;\n" +
+                "// Function to remove all spaces from a given string\n" +
+                "void removeSpaces(char *str)\n" +
+                "{\n" +
+                "// To keep track of non-space character count\n" +
+                "int count = 0;\n" +
+                "// Traverse the provided string. If the current character is not a space,\n" +
+                "//move it to index 'count++'.\n" +
+                "for (int i = 0; str[i]; i++)\n" +
+                "if (str[i] != ' ')\n" +
+                "str[count++] = str[i]; // here count is\n" +
+                "// incremented\n" +
+                "str[count] = '\\0';\n" +
+                "}\n" +
+                "// Driver program to test above function\n" +
+                "int main()\n" +
+                "{\n" +
+                "char str[] = \"P re p i n sta \";\n" +
+                "removeSpaces(str);\n" +
+                "cout << str;\n" +
+                "return 0;\n" +
+                "}\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q49. Remove brackets from an algebraic expression\n"+"\n #include <iostream>\n" +
+                "using namespace std;\n" +
+                "\n" +
+                "int main()\n" +
+                "{\n" +
+                "//Initializing variables.\n" +
+                "char str[100]=\"Prepins))ta\", str_without_brackets[100];\n" +
+                "int i=0, j=0 ;\n" +
+                "\n" +
+                "//Iterating each character of string.\n" +
+                "while(str[i] != '\\0')\n" +
+                "{\n" +
+                "if(str[i] != '(' && str[i] != ')')//Removing brackets.\n" +
+                "{\n" +
+                "str_without_brackets[j++] = str[i];\n" +
+                "}\n" +
+                "i++;\n" +
+                "}\n" +
+                "str_without_brackets[j] = '\\0';\n" +
+                "\n" +
+                "//Printing result.\n" +
+                "cout<<\"The string after removing all the brackets is:\\n\"<<str_without_brackets;\n" +
+                "return 0;\n" +
+                "}\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q50. Count the sum of numbers in a string\n"+"\n #include<iostream>\n" +
+                "using namespace std;\n" +
+                "\n" +
+                "int findSum(string str)\n" +
+                "{\n" +
+                "int sum = 0;\n" +
+                "for (char ch : str)\n" +
+                "{\n" +
+                "if (isdigit(ch))\n" +
+                "{\n" +
+                "sum += ch - '0';\n" +
+                "}\n" +
+                "}\n" +
+                "return sum;\n" +
+                "}\n" +
+                "int main()\n" +
+                "{\n" +
+                "string str=\"Pr22e44pinsta\";\n" +
+                "cout << \"Sum :\" << findSum(str) << endl;\n" +
+                "}\n");
 
         // Get the list of answers and convert it to a string
         ArrayList<String> answers = answerStorage.getAnswers();

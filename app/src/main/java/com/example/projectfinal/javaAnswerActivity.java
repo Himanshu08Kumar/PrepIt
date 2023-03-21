@@ -1166,7 +1166,190 @@ public class javaAnswerActivity extends AppCompatActivity {
                 "     System.out.println(\"Odd Elements count : \"+ countOdd);\n" +
                 "  }\n" +
                 "}\n");
-
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q41. Check whether a character is a vowel or consonant \n"+"\n public class Main\n" +
+                "{\n" +
+                "    public static void main(String[] args)\n" +
+                "    {\n" +
+                "\n" +
+                "        char c = 'g';   \n" +
+                "\n" +
+                "        //checking for vowels    \n" +
+                "        if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'||c=='A'||c=='E'||c=='I'||c=='O'||c=='U')\n" +
+                "        {\n" +
+                "            System.out.println(c + \" is a vowel \");  // condition true input is vowel\n" +
+                "        }\n" +
+                "        else\n" +
+                "        {\n" +
+                "            System.out.println(c + \" is a consonant \");  // condition true input is consonant\n" +
+                "        }\n" +
+                "\n" +
+                "    }\n" +
+                "\n" +
+                "}\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q42. Check whether a character is a alphabet or not\n"+"\n import java.util.Scanner;\n" +
+                "\n" +
+                "//class declaration\n" +
+                "public class Main\n" +
+                "{\t\t\t\t\t\t\n" +
+                "    \n" +
+                "    //main method declaration\n" +
+                "    public static void main(String[] args)\n" +
+                "    {\t\t\t\t\t\t\t\t\t\t\n" +
+                "        char ch;\n" +
+                "                              \n" +
+                "        ch = '9';\n" +
+                "\t\t\n" +
+                "\t//condition for checking characters\n" +
+                "        if((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))\n" +
+                "\t      System.out.println(\"The inserted character \" + ch + \" is an Alphabet\");\n" +
+                "\telse\n" +
+                "\t      System.out.println(\"The inserted character \" + ch + \" is not an Alphabet\");\n" +
+                "\t\t\n" +
+                "\t\t\t\t                               \n" +
+                "\t\n" +
+                "    } //end of the main method\n" +
+                "    \n" +
+                "}\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q43. Count the number of vowels \n"+"\n import java.util.Scanner;\n" +
+                "\n" +
+                "public class  Main{\n" +
+                "\n" +
+                "\tpublic static void main(String[] args) {\n" +
+                "\t\tString s = \"prepinsta\";\n" +
+                "\t\tchar[] c = s.toCharArray();\n" +
+                "\t\tint vowel=0;\n" +
+                "\t\t\n" +
+                "\t\tfor (int i = 0; i < s.length(); i++) { \n" +
+                "            if(s.charAt(i)=='a' || s.charAt(i)=='e' || s.charAt(i)=='i' || s.charAt(i)=='o' || s.charAt(i)=='u') \n" +
+                "                vowel++; \n" +
+                "\t\t}\n" +
+                "  \n" +
+                "\tSystem.out.println(\"Vowels: \" + vowel);\n" +
+                "    }\n" +
+                "}\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q44. Remove the vowels from a String\n"+"\n import java.util.Scanner;\n" +
+                "\n" +
+                "public class Main {\n" +
+                "\n" +
+                "\tpublic static void main(String[] args) {\n" +
+                "\t\t\n" +
+                "        String s = \"prepinsta\";\n" +
+                "        String s1 = \"\";\n" +
+                "        s1 = s.replaceAll(\"[aeiou]\", \"\"); \n" +
+                "        System.out.println(\"String after removing vowel : \"+s1); \n" +
+                "\t}\n" +
+                "\n" +
+                "}\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q45. Check if the given string is Palindrome or not\n"+"\n import java.util.Scanner;\n" +
+                "\n" +
+                "public class StringIsAPalindromeOrNot {\n" +
+                "\n" +
+                "\tpublic static void main(String[] args) {\n" +
+                "\t\t\n" +
+                "\t\tString s = \"arora\";\n" +
+                "\t\tString rev = \"\";\n" +
+                "\t\tfor (int i = s.length()-1; i >=0 ; i--) \n" +
+                "\t\t\trev=rev+s.charAt(i);\n" +
+                "\t\tif(s.equals(rev))\n" +
+                "\t\t\tSystem.out.println(\"String is palindrome\");\n" +
+                "\t\telse \n" +
+                "\t\t\tSystem.out.println(\"String is not palindrome\");\n" +
+                "\n" +
+                "\t}\n" +
+                "\n" +
+                "}\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q46. Print the given string in reverse order\n"+"\n import java.util.Scanner;\n" +
+                "public class Main {\n" +
+                "    public static void main(String[] args) {\n" +
+                "    String s =\"Prepinsta\";\n" +
+                "    StringBuilder sb = new StringBuilder();\n" +
+                "    sb.append(s);\n" +
+                "    System.out.println( \"String is : \"+sb);\n" +
+                "    sb.reverse();\n" +
+                "   System.out.println(\"Reversed string is : \"+sb);\n" +
+                "  }\n" +
+                "}\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q47. Remove all characters from string except alphabets\n"+"\n class Main\n" +
+                "{\n" +
+                "    // function to remove characters and\n" +
+                "    // print new string\n" +
+                "    static void removeSpecialCharacter(String s)\n" +
+                "    {\n" +
+                "        for (int i = 0; i < s.length(); i++)\n" +
+                "        {\n" +
+                "            // Finding the character whose\n" +
+                "            // ASCII value fall under this\n" +
+                "            // range\n" +
+                "            if (s.charAt(i) < 'A' || s.charAt(i) > 'Z' && s.charAt(i) < 'a' || s.charAt(i) > 'z')\n" +
+                "            {\n" +
+                "\n" +
+                "                // erase function to erase\n" +
+                "                // the character\n" +
+                "                s = s.substring(0, i) + s.substring(i + 1);\n" +
+                "                i--;\n" +
+                "            }\n" +
+                "        }\n" +
+                "        System.out.print(s);\n" +
+                "    }\n" +
+                "    // Driver code\n" +
+                "    public static void main(String[] args)\n" +
+                "    {\n" +
+                "        String s = \"$P*r;e..pi, ns'ta^?\";\n" +
+                "        removeSpecialCharacter(s);\n" +
+                "    }\n" +
+                "}\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q48. Remove spaces from a string\n"+"\n import java.util.Scanner;\n" +
+                "\n" +
+                "public class Main {\n" +
+                "\n" +
+                "\tpublic static void main(String[] args) {\n" +
+                "\t  Scanner sc =new Scanner(System.in);\n" +
+                "\t  String s = \"Prepinsta is best\";\n" +
+                "\t  char[] c = s.toCharArray();\n" +
+                "\t  StringBuffer sb = new StringBuffer();\n" +
+                "\t  \n" +
+                "\t  \n" +
+                "\t  for (int i = 0; i < c.length; i++) {\n" +
+                "\t     if( (c[i] != ' ') && (c[i]!= '\\t' )) {\n" +
+                "\t    \t sb.append(c[i]);\n" +
+                "\t     }    \t\n" +
+                "          }\n" +
+                "\t  System.out.println(\"String after removing spaces : \"+sb);\n" +
+                "    }\n" +
+                "}\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q49. Remove brackets from an algebraic expression\n"+"\n import java.util.Scanner;\n" +
+                "\n" +
+                "public class Main {\n" +
+                "\n" +
+                "public static void main(String[] args) {\n" +
+                "     \n" +
+                "     String s = \"(a+b)=c\";\n" +
+                "     String result = s.replaceAll(\"[(){}]\",\"\");\n" +
+                "     System.out.println(\"Expression without brackets : \"+result);\n" +
+                "  }\n" +
+                "}\n");
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q50. Count the sum of numbers in a string\n"+"\n import java.util.Scanner;\n" +
+                "public class Main {\n" +
+                "   public static void main(String[] args) {\n" +
+                "   String s =\"4PREP2INSTAA6\";\n" +
+                "   int sum=0;\n" +
+                "   for (int i = 0; i < s.length(); i++) {\n" +
+                "      if(Character.isDigit(s.charAt(i))) \n" +
+                "      sum=sum+Character.getNumericValue(s.charAt(i));\n" +
+                "      }\n" +
+                "   System.out.println(\"Sum of all the digit present in String : \"+sum);\n" +
+                "  }\n" +
+                "}\n");
 
         ArrayList<String> answers = answerStorage.getAnswers();
         String answersString = TextUtils.join("\n", answers);

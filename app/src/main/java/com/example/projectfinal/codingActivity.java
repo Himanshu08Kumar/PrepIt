@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class codingActivity extends AppCompatActivity implements View.OnClickListener{
-    public CardView coding1, coding2, coding3, coding4, coding5, coding6, coding7, coding8, coding9, coding10, coding11, coding12, coding13, coding14, coding15, coding16, coding17, coding18, coding19, coding20, coding21, coding22, coding23, coding24, coding25, coding26, coding27, coding28, coding29, coding30, coding31, coding32, coding33, coding34, coding35, coding36, coding37, coding38, coding39, coding40;
+    public CardView coding1, coding2, coding3, coding4, coding5, coding6, coding7, coding8, coding9, coding10, coding11, coding12, coding13, coding14, coding15, coding16, coding17, coding18, coding19, coding20, coding21, coding22, coding23, coding24, coding25, coding26, coding27, coding28, coding29, coding30, coding31, coding32, coding33, coding34, coding35, coding36, coding37, coding38, coding39, coding40, coding41, coding42, coding43, coding44, coding45, coding46, coding47, coding48, coding49, coding50;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +55,16 @@ public class codingActivity extends AppCompatActivity implements View.OnClickLis
         coding38 = (CardView) findViewById(R.id.coding38);
         coding39 = (CardView) findViewById(R.id.coding39);
         coding40 = (CardView) findViewById(R.id.coding40);
+        coding41 = (CardView) findViewById(R.id.coding41);
+        coding42 = (CardView) findViewById(R.id.coding42);
+        coding43 = (CardView) findViewById(R.id.coding43);
+        coding44 = (CardView) findViewById(R.id.coding44);
+        coding45 = (CardView) findViewById(R.id.coding45);
+        coding46 = (CardView) findViewById(R.id.coding46);
+        coding47 = (CardView) findViewById(R.id.coding47);
+        coding48 = (CardView) findViewById(R.id.coding48);
+        coding49 = (CardView) findViewById(R.id.coding49);
+        coding50 = (CardView) findViewById(R.id.coding50);
 
         coding1.setOnClickListener(this);
         coding2.setOnClickListener(this);
@@ -96,6 +106,16 @@ public class codingActivity extends AppCompatActivity implements View.OnClickLis
         coding38.setOnClickListener(this);
         coding39.setOnClickListener(this);
         coding40.setOnClickListener(this);
+        coding41.setOnClickListener(this);
+        coding42.setOnClickListener(this);
+        coding43.setOnClickListener(this);
+        coding44.setOnClickListener(this);
+        coding45.setOnClickListener(this);
+        coding46.setOnClickListener(this);
+        coding47.setOnClickListener(this);
+        coding48.setOnClickListener(this);
+        coding49.setOnClickListener(this);
+        coding50.setOnClickListener(this);
     }
 
     @Override
@@ -142,6 +162,16 @@ public class codingActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.coding38:
             case R.id.coding39:
             case R.id.coding40:
+            case R.id.coding41:
+            case R.id.coding42:
+            case R.id.coding43:
+            case R.id.coding44:
+            case R.id.coding45:
+            case R.id.coding46:
+            case R.id.coding47:
+            case R.id.coding48:
+            case R.id.coding49:
+            case R.id.coding50:
                 i= new Intent(this,codingQnActivity.class);
                 startActivity(i);
                 break;
