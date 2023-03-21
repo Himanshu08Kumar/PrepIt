@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class AptiCardActivity extends AppCompatActivity implements View.OnClickListener {
-    public CardView time, trains, SI, profit, percent, calendar;
+    public CardView time, trains, SI, profit, percent, calendar, permutation, boats;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,8 @@ public class AptiCardActivity extends AppCompatActivity implements View.OnClickL
         profit = (CardView) findViewById(R.id.profit);
         percent = (CardView) findViewById(R.id.percent);
         calendar = (CardView) findViewById(R.id.calendar);
+        permutation = (CardView) findViewById(R.id.permutation);
+        boats = (CardView) findViewById(R.id.boats);
 
         time.setOnClickListener(this);
         trains.setOnClickListener(this);
@@ -32,6 +34,8 @@ public class AptiCardActivity extends AppCompatActivity implements View.OnClickL
         profit.setOnClickListener(this);
         percent.setOnClickListener(this);
         calendar.setOnClickListener(this);
+        permutation.setOnClickListener(this);
+        boats.setOnClickListener(this);
     }
 
     public void onClick(View v) {
@@ -65,6 +69,15 @@ public class AptiCardActivity extends AppCompatActivity implements View.OnClickL
                 startActivity(i);
                 break;
 
+            case R.id.permutation:
+                i = new Intent(this, aptiActivity6.class);
+                startActivity(i);
+                break;
+
+            case R.id.boats:
+                i = new Intent(this, aptiActivity7.class);
+                startActivity(i);
+                break;
 
         }
     }

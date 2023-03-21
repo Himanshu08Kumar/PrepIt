@@ -35,7 +35,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
         android:columnCount="2"
-        android:rowCount="8">
+        android:rowCount="10">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/Time"
@@ -188,10 +188,40 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/calendar"
+        android:id="@+id/calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_row="5"
+        android:layout_rowWeight="1"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        app:cardBackgroundColor="#41ffffff"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calendar\nClock"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/permutation"
             android:layout_width="wrap_content"
             android:layout_height="150dp"
-            android:layout_row="5"
+            android:layout_row="6"
             android:layout_rowWeight="1"
             android:layout_column="0"
             android:layout_columnWeight="1"
@@ -211,7 +241,37 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Calendar\nClock"
+                    android:text="Permutation and Combination"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/boats"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_row="7"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#41ffffff"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Boats and Streams"
                     android:textAlignment="center"
                     android:textColor="#fff"
                     android:textStyle="bold" />
