@@ -411,7 +411,794 @@ public class CAnswerActivity extends AppCompatActivity {
                 "}\n");
 
         answerStorage.addAnswer("<------------------------------------------------------>\n");
-        answerStorage.addAnswer("Q16. \n"+"\n \n");
+        answerStorage.addAnswer("Q16. Armstrong number :\n"+"\n #include <stdio.h>\n" +
+                "#include <math.h>\n" +
+                " int order(int x)\n" +
+                " {\n" +
+                "  int len = 0;\n" +
+                "  while (x)\n" +
+                "  {\n" +
+                "    len++;\n" +
+                "    x = x/10;\n" +
+                "  }\n" +
+                "  return len;\n" +
+                " }\n" +
+                "  int getArmstrongSum(int num, int order){\n" +
+                "\n" +
+                "  if(num == 0)\n" +
+                "  return 0;\n" +
+                "\n" +
+                "  int digit = num % 10;\n" +
+                "\n" +
+                "  return pow(digit, order) + getArmstrongSum(num/10, order);\n" +
+                " }\n" +
+                "\n" +
+                "\n" +
+                "// Driver Code\n" +
+                "int main ()\n" +
+                "{\n" +
+                "  int num, len;\n" +
+                "  num=1634;\n" +
+                "  printf(\"The number is:%d\\n\",num); \n" +
+                "\n" +
+                "  // function to get order(length)\n" +
+                "  len = order(num);\n" +
+                "\n" +
+                "  // check if Armstrong\n" +
+                "  if (num == getArmstrongSum(num, len))\n" +
+                "    printf(\"%d is Armstrong\", num);\n" +
+                "  else\n" +
+                "    printf(\"%d is Not Armstrong\", num);\n" +
+                " \n" +
+                " }\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q17. Fibonacci Series upto nth term\n"+"\n #include<stdio.h>\n" +
+                "\n" +
+                "int main()\n" +
+                "{\n" +
+                "    int n = 10;\n" +
+                "    int a = 0, b = 1;\n" +
+                "    \n" +
+                "    // printing the 0th and 1st term\n" +
+                "    printf(\"%d, %d\",a,b);\n" +
+                "    \n" +
+                "    int nextTerm;\n" +
+                "    \n" +
+                "    // printing the rest of the terms here\n" +
+                "    for(int i = 2; i < n; i++){\n" +
+                "        nextTerm = a + b;\n" +
+                "        a = b;\n" +
+                "        b = nextTerm;\n" +
+                "        \n" +
+                "        printf(\"%d, \",nextTerm);\n" +
+                "    }\n" +
+                "\n" +
+                "    return 0;\n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q18. Factorial of a number\n"+"\n #include<stdio.h>\n" +
+                "int main ()\n" +
+                "{\n" +
+                "    int num = 5, fact = 1;\n" +
+                "    \n" +
+                "    // Can't calculate factorial of a negative number\n" +
+                "    if(num < 0)\n" +
+                "        printf(\"Error\");\n" +
+                "    else\n" +
+                "    {\n" +
+                "        for(int i = 1; i <= num; i++)\n" +
+                "            fact = fact * i;\n" +
+                "    }\n" +
+                "    \n" +
+                "    printf(\"Fact %d: %d\",num, fact);\n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q19. Power of a number\n"+"\n #include<stdio.h>\n" +
+                "#include<math.h> \n" +
+                "int main() \n" +
+                "{\n" +
+                "    double base = 2.3;\n" +
+                "    double exp = 2.1;\n" +
+                "    double result;\n" +
+                "    \n" +
+                "    // calculates the power\n" +
+                "    result = pow(base, exp);\n" +
+                "    \n" +
+                "    // %lf used for double\n" +
+                "    printf(\"%lf ^ %lf = %lf\\n\", base, exp, result);\n" +
+                "    \n" +
+                "    // following can be used for precision setting\n" +
+                "    printf(\"%.1lf ^ %.1lf = %.2lf\", base, exp, result);\n" +
+                "\n" +
+                "    return 0;\n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q20. Factor of a number\n"+"\n #include <stdio.h>\n" +
+                "\n" +
+                "\n" +
+                "//main Program\n" +
+                "int main()\n" +
+                "{\n" +
+                "    int n = 100;\n" +
+                "    \n" +
+                "    printf(\"Factors of %d are : \\n\", n);\n" +
+                "    \n" +
+                "    // finding and printing factors b/w 1 to num\n" +
+                "    for(int i = 1; i <= n; i++)\n" +
+                "    {\n" +
+                "        // if n is divisible by i, then i is a factor of n\n" +
+                "        if(n % i == 0)\n" +
+                "            printf(\"%d, \", i);\n" +
+                "    }\n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q21. Finding Prime Factors of a number\n"+"\n #include <stdio.h>\n" +
+                "void primefactor(int num) {\n" +
+                "    printf(\"Prime factors of the number : \");     \n" +
+                "    for (int i = 2; num > 1; i++) {\n" +
+                "                  while (num % i == 0) {\n" +
+                "                        printf(\"%d \", i);             \n" +
+                "                        num = num / i;         \n" +
+                "                       }     \n" +
+                "                   } \n" +
+                "                } \n" +
+                "int main() {\n" +
+                "      int num;     \n" +
+                "      num=12;\n" +
+                "      primefactor(num);     \n" +
+                "     return 0; \n" +
+                "}\n");
+
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q22. Strong number\n"+"\n #include <stdio.h>\n" +
+                "\n" +
+                "// function to calculate factorial\n" +
+                "int getFactorial(int n){\n" +
+                "    int fact = 1;\n" +
+                "    \n" +
+                "    for(int i = 1; i <= n; i++)\n" +
+                "            fact = fact * i;\n" +
+                "    \n" +
+                "    return fact;\n" +
+                "}\n" +
+                "\n" +
+                "int checkStrong(int num){\n" +
+                "    \n" +
+                "    int digit, sum = 0;\n" +
+                "    int temp = num;\n" +
+                "    \n" +
+                "    // calculate 1! + 4! + 5!\n" +
+                "    while(temp!=0){\n" +
+                "        digit = temp % 10;\n" +
+                "        \n" +
+                "        sum = sum + getFactorial(digit);\n" +
+                "        temp /= 10;\n" +
+                "    }\n" +
+                "    \n" +
+                "    // returns 1 if both equal else 0\n" +
+                "    return sum == num;\n" +
+                "    \n" +
+                "}\n" +
+                "int main ()\n" +
+                "{\n" +
+                "    int num = 145;\n" +
+                "    \n" +
+                "    if(checkStrong(num))\n" +
+                "        printf(\"%d is Strong Number\", num);\n" +
+                "    else\n" +
+                "        printf(\"%d is Not Strong Number\", num);\n" +
+                "\n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q23. Perfect number\n"+"\n #include <stdio.h>\n" +
+                "\n" +
+                "int main ()\n" +
+                "{\n" +
+                "    int num = 28, sum = 0;\n" +
+                "    // iteratively check for all numbers in range [1, 27]\n" +
+                "    for(int i = 1; i < num; i++){\n" +
+                "        // check if i is a divisor, if yes then add to sum\n" +
+                "        if(num % i == 0)\n" +
+                "            sum = sum + i;\n" +
+                "    }\n" +
+                "    \n" +
+                "    if(sum == num)\n" +
+                "        printf(\"%d is a perfect number\",num);\n" +
+                "    else\n" +
+                "        printf(\"%d is not a perfect number\",num);\n" +
+                "    \n" +
+                "\n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q24. Perfect Square \n"+"\n #include <stdio.h>\n" +
+                "#include <math.h>\n" +
+                "\n" +
+                "int isPerfectSquare(long double x)\n" +
+                "{\n" +
+                "    if (x >= 0) {\n" +
+                " \n" +
+                "        long long sr = sqrt(x);\n" +
+                "        return (sr * sr == x);\n" +
+                "    }\n" +
+                "    \n" +
+                "    return 0;\n" +
+                "}\n" +
+                " \n" +
+                "int main()\n" +
+                "{\n" +
+                "    long long x = 84;\n" +
+                "    if (isPerfectSquare(x)==1)\n" +
+                "        printf(\"True\");\n" +
+                "    else\n" +
+                "        printf(\"False\");\n" +
+                "    return 0;\n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q25. Automorphic number\n"+"\n #include <stdio.h>\n" +
+                "\n" +
+                "int checkAutomorphic(int num){\n" +
+                "    \n" +
+                "    int square = num * num;\n" +
+                "    \n" +
+                "    while(num != 0)\n" +
+                "    {\n" +
+                "        // means not automorphic number\n" +
+                "        if(num % 10 != square % 10){\n" +
+                "            return 0;\n" +
+                "        }\n" +
+                "        \n" +
+                "        // reduce down numbers\n" +
+                "        num /= 10;\n" +
+                "        square /= 10;\n" +
+                "    }\n" +
+                "    // if reaches here means automorphic number\n" +
+                "    return 1;\n" +
+                "}\n" +
+                "\n" +
+                "int main ()\n" +
+                "{\n" +
+                "    int num = 376, square = num * num ;\n" +
+                "    \n" +
+                "    if(checkAutomorphic(num))\n" +
+                "        printf(\"Num : %d, Square: %d - Automorphic Number\",num, square);\n" +
+                "    else\n" +
+                "        printf(\"Num : %d, Square: %d - Not Automorphic Number\",num, square);\n" +
+                "    \n" +
+                "\n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q26. Find Largest element in an array\n"+"\n #include<stdio.h>\n" +
+                "\n" +
+                "int getLargest(int arr[], int len)\n" +
+                "{\n" +
+                "    // assign first array element as largest\n" +
+                "    int max = arr[0];\n" +
+                "    \n" +
+                "    // linearly search for the largest element\n" +
+                "    for(int i=1; i max)\n" +
+                "            max = arr[i];\n" +
+                "    }\n" +
+                "    \n" +
+                "    return max;\n" +
+                "    \n" +
+                "}\n" +
+                "int main()\n" +
+                "{\n" +
+                "    int arr[] = {20, 5, 35, 40, 10, 50, 15};\n" +
+                "    \n" +
+                "    // get the length of the array\n" +
+                "    int len = sizeof(arr)/sizeof(arr[0]);    \n" +
+                "    \n" +
+                "    printf(\"The Largest element is: %d\", getLargest(arr, len));\n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q27. Find Smallest Element in an Array\n"+"\n #include <stdio.h>\n" +
+                "\n" +
+                "int getSmallest(int arr[], int len)\n" +
+                "{\n" +
+                "    // assign first array element as smallest\n" +
+                "    int min = arr[0];\n" +
+                "    \n" +
+                "    // linearly search for the smallest element\n" +
+                "    for(int i=1; i < len; i++)\n" +
+                "    {\n" +
+                "        // if the current array element is smaller\n" +
+                "        if (arr[i] < min)\n" +
+                "            min = arr[i];\n" +
+                "    }\n" +
+                "    \n" +
+                "    return min;\n" +
+                "    \n" +
+                "}\n" +
+                "int main()\n" +
+                "{\n" +
+                "    int arr[] = {5, 8, 7, 2, 12, 4};\n" +
+                "    \n" +
+                "    // get the length of the array\n" +
+                "    int len = sizeof(arr)/sizeof(arr[0]);    \n" +
+                "    \n" +
+                "    printf(\"The smallest : %d\", getSmallest(arr, len));\n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q28. Find Second Smallest Element in an Array\n"+"\n #include <stdio.h>\n" +
+                "#include <limits.h>\n" +
+                "\n" +
+                "int secSmallest(int arr[], int n)\n" +
+                "{\n" +
+                "    // assigning first element as smallest temporarily\n" +
+                "    int smallest = arr[0];\n" +
+                "    \n" +
+                "    // we find the smallest element here\n" +
+                "    for (int i=0; i < n; i++){\n" +
+                "        if(arr[i] < smallest)\n" +
+                "            smallest = arr[i];\n" +
+                "    }\n" +
+                "    \n" +
+                "    // temporarily assinging largest max value\n" +
+                "    int sec_smallest = INT_MAX;\n" +
+                "    \n" +
+                "    // finding second smallest here\n" +
+                "    for (int i=0; i < n; i++){\n" +
+                "        if(arr[i] != smallest && arr[i] < sec_smallest)\n" +
+                "            sec_smallest = arr[i];\n" +
+                "    }\n" +
+                "\n" +
+                "    return sec_smallest;\n" +
+                "    \n" +
+                "}\n" +
+                "int main()\n" +
+                "{\n" +
+                "    int arr[] = {70, 40, 30, 20, 10, 90};\n" +
+                "    \n" +
+                "    // get the length of the array\n" +
+                "    int len = sizeof(arr)/sizeof(arr[0]);    \n" +
+                "    \n" +
+                "    printf(\"The 2nd smallest : %d\",secSmallest(arr, len));\n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q29. Calculate the sum of elements in an array \n"+"\n #include <stdio.h>\n" +
+                "\n" +
+                "int calcSum(int arr[], int len){\n" +
+                "    int sum = 0;\n" +
+                "    \n" +
+                "    for(int i = 0; i < len; i++)\n" +
+                "        sum = sum + arr[i];\n" +
+                "        \n" +
+                "    return sum;\n" +
+                "}\n" +
+                "int main()\n" +
+                "{\n" +
+                "    int arr[] = {1, 5, 2, 10, 4, 8};\n" +
+                "    \n" +
+                "    // get the length of the array\n" +
+                "    int len = sizeof(arr)/sizeof(arr[0]);    \n" +
+                "    \n" +
+                "    printf(\"Sum: %d\",calcSum(arr, len));\n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q30. Reverse an Array\n"+"\n #include <stdio.h>\n" +
+                "\n" +
+                "void printReverse(int arr[], int len){\n" +
+                "    \n" +
+                "    for(int i = len - 1; i >= 0; i--)\n" +
+                "        printf(\"%d \", arr[i]);\n" +
+                "}\n" +
+                "\n" +
+                "int main()\n" +
+                "{\n" +
+                "    int arr[] = {10, 20, 30, 40, 50, 60};\n" +
+                "    \n" +
+                "    int len = sizeof(arr)/sizeof(arr[0]);\n" +
+                "    \n" +
+                "    printf(\"Array in Reverse:\\n\");\n" +
+                "    printReverse(arr, len);\n" +
+                "\n" +
+                "    return 0;\n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q31. Sort the elements of an array \n"+"\n #include <stdio.h>\n" +
+                "\n" +
+                "void swap(int *xp, int *yp) \n" +
+                "{ \n" +
+                "   int temp = *xp; \n" +
+                "   *xp = *yp; \n" +
+                "   *yp = temp; \n" +
+                "}\n" +
+                "\n" +
+                "void selectionSort(int array[], int size) \n" +
+                "{ \n" +
+                "    int i, j, min_idx;\n" +
+                "\n" +
+                "    // Loop to iterate on array \n" +
+                "    for (i = 0; i < size-1; i++) \n" +
+                "    { \n" +
+                "        // Here we try to find the min element in array \n" +
+                "        min_idx = i; \n" +
+                "        for (j = i+1; j < size; j++)\n" +
+                "        {\n" +
+                "            if (array[j] < array[min_idx]) \n" +
+                "              min_idx = j; \n" +
+                "        }\n" +
+                "        // Here we interchange the min element with first one \n" +
+                "        swap(&array[min_idx], &array[i]); \n" +
+                "     } \n" +
+                "}\n" +
+                "\n" +
+                "/* Display function to print values */\n" +
+                "void display(int array[], int size) \n" +
+                "{ \n" +
+                "    int i; \n" +
+                "    for (i=0; i < size; i++)\n" +
+                "    { \n" +
+                "       printf(\"%d \",array[i]);\n" +
+                "    }\n" +
+                "     printf(\"\\n\"); \n" +
+                "}\n" +
+                "\n" +
+                "// The main function to drive other functions \n" +
+                "int main() \n" +
+                "{ \n" +
+                "   int array[] = {50, 30, 10, 90, 80, 20, 40, 70}; \n" +
+                "   int size = sizeof(array)/sizeof(array[0]);\n" +
+                "\n" +
+                "   selectionSort(array, size);\n" +
+                "  \n" +
+                "   display(array, size);\n" +
+                "\n" +
+                "   return 0; \n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q32. Sorting elements of an array by frequency\n"+"\n #include<stdio.h>\n" +
+                "#define MAX 256\n" +
+                "int main ()\n" +
+                "{\n" +
+                "     int a[]={1, 2, 1, 1, 2, 3, 3, 3, 3, 0};\n" +
+                "     int n = sizeof(a)/sizeof(a[0]);\n" +
+                "     int arr[MAX][2], brr[MAX][2];\n" +
+                "     int k = 0, temp, count;\n" +
+                "     for (int i = 0; i < n; i++)\n" +
+                "     {\n" +
+                "        arr[i][0] = a[i];\n" +
+                "        arr[i][1] = 0;\n" +
+                "     }\n" +
+                "     // Unique elements and its frequency are stored in another array\n" +
+                "     for (int i = 0; i < n; i++)\n" +
+                "     {\n" +
+                "         if (arr[i][1])\n" +
+                "          continue;\n" +
+                "         count = 1;\n" +
+                "         for (int j = i + 1; j < n; j++)\n" +
+                "         {\n" +
+                "             if (arr[i][0] == arr[j][0])\n" +
+                "             {\n" +
+                "                 arr[j][1] = 1;\n" +
+                "                 count++;\n" +
+                "             }\n" +
+                "         }\n" +
+                "         brr[k][0] = arr[i][0];\n" +
+                "         brr[k][1] = count;\n" +
+                "         k++;\n" +
+                "     }\n" +
+                "     n = k;\n" +
+                "\n" +
+                "     //Store the array and its frequency in sorted form\n" +
+                "     for (int i = 0; i < n - 1; i++)\n" +
+                "     {\n" +
+                "         temp = brr[i][1];\n" +
+                "         for (int j = i + 1; j < n; j++)\n" +
+                "         {\n" +
+                "             if (temp < brr[j][1])\n" +
+                "             {\n" +
+                "                temp = brr[j][1];\n" +
+                "                brr[j][1] = brr[i][1];\n" +
+                "                brr[i][1] = temp;\n" +
+                "\n" +
+                "                temp = brr[j][0];\n" +
+                "                brr[j][0] = brr[i][0];\n" +
+                "                brr[i][0] = temp;\n" +
+                "             }\n" +
+                "         }\n" +
+                "      }\n" +
+                "      for (int i = 0; i < n; i++)\n" +
+                "      {\n" +
+                "            while (brr[i][1] != 0)\n" +
+                "            {\n" +
+                "                 printf (\" %d \", brr[i][0]);\n" +
+                "                 brr[i][1]--;\n" +
+                "            }\n" +
+                "      }\n" +
+                "return 0;\n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q33. Finding the Longest Palindrome in an Array\n"+"\n #include <stdio.h>\n" +
+                "#include <limits.h>\n" +
+                "int ispalindrome(int n){\n" +
+                "     int rev=0, temp = n;\n" +
+                "\n" +
+                "     while(temp>0){\n" +
+                "          int rem = temp%10;\n" +
+                "          rev = rev*10 + rem;\n" +
+                "          temp /= 10;\n" +
+                "     }\n" +
+                "\n" +
+                "     if(n==rev)\n" +
+                "        return 1;\n" +
+                "\n" +
+                "     return 0;\n" +
+                "}\n" +
+                "\n" +
+                "int main(){\n" +
+                "    int arr[] = {1, 121, 55551, 545545, 10111, 90};\n" +
+                "    int n = sizeof(arr)/sizeof(arr[0]);\n" +
+                "    int res = INT_MIN;\n" +
+                "\n" +
+                "    for(int i=0; i<n; i++){\n" +
+                "\n" +
+                "          if(ispalindrome(arr[i]) && res<arr[i])\n" +
+                "             res = arr[i];\n" +
+                "\n" +
+                "    }\n" +
+                "\n" +
+                "    if(res==INT_MIN)\n" +
+                "       res = -1;\n" +
+                "\n" +
+                "    printf(\"%d \",res);\n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q34. Counting Distinct Elements in an Array\n"+"\n #include<stdio.h>\n" +
+                "#include<stdlib.h>\n" +
+                "\n" +
+                "// Main function to run the program\n" +
+                "int main() \n" +
+                "{ \n" +
+                "    int arr[] = {30, 50, 30, 10, 20, 40, 10, 20}; \n" +
+                "    int n = sizeof(arr)/sizeof(arr[0]); \n" +
+                "\n" +
+                "    int visited[n] = {0};// marking all items 0(unvisited)\n" +
+                "    int count_dis=0;\n" +
+                "    \n" +
+                "    for(int i=0; i < n; i++)\n" +
+                "    {\n" +
+                "        // only if unvisited\n" +
+                "        if(visited[i]==0)\n" +
+                "        {\n" +
+                "            for(int j = i+1; j < n; j++){\n" +
+                "                // if item appears again in the array\n" +
+                "                if(arr[i] == arr[j]){\n" +
+                "                    // mark visited\n" +
+                "                    visited[j] = 1;\n" +
+                "                }\n" +
+                "            }\n" +
+                "            // increase count as current array item counted\n" +
+                "            // and future indexes with same value marked visited\n" +
+                "            count_dis++;\n" +
+                "        }\n" +
+                "    }\n" +
+                "   printf(\"Distinct items : %d \",count_dis);\n" +
+                "   return 0; \n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q35. Finding  Repeating elements in an Array\n"+"\n #include<stdio.h>\n" +
+                "int main() \n" +
+                "{ \n" +
+                "    int arr[] = {20, 30, 10, 2, 10, 20, 30, 11}; \n" +
+                "    int n = sizeof(arr)/sizeof(arr[0]); \n" +
+                "\n" +
+                "    int visited[n];\n" +
+                " \n" +
+                "    for(int i=0; i < n; i++){\n" +
+                "        \n" +
+                "        // only if unvisited\n" +
+                "        if(visited[i] == 0){\n" +
+                "            int count = 1;\n" +
+                "          \n" +
+                "            for(int j = i+1; j < n; j++) { \n" +
+                "\t\t\t\t// if appears again in the array \n" +
+                "\t\t\t\tif(arr[i] == arr[j]) \n" +
+                "\t\t\t\t{ // increase count & mark index visited \n" +
+                "\t\t\t\t\tcount++; \n" +
+                "\t\t\t\t\tvisited[j] = 1; \n" +
+                "\t\t\t\t} \n" +
+                "\t\t\t} // \n" +
+                "\t\t\t\n" +
+                "            if(count > 1)\n" +
+                "                printf(\"%d \",arr[i]);\n" +
+                "        }\n" +
+                "    }\n" +
+                "   return 0; \n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q36. Finding Non Repeating elements in an Array\n"+"\n #include <stdio.h>\n" +
+                "\n" +
+                "// Main function to run the program\n" +
+                "int main() \n" +
+                "{ \n" +
+                "    int arr[] = {21, 30, 10, 2, 10, 20, 30, 11}; \n" +
+                "    int n = sizeof(arr)/sizeof(arr[0]); \n" +
+                "\n" +
+                "    int visited[n];\n" +
+                " \n" +
+                "    for(int i=0; i<n; i++){\n" +
+                "\n" +
+                "       if(visited[i]==0){\n" +
+                "          int count = 1;\n" +
+                "          for(int j=i+1; j<n; j++){\n" +
+                "             if(arr[i]==arr[j]){\n" +
+                "                count++;\n" +
+                "                visited[j]=1;\n" +
+                "             }\n" +
+                "          }\n" +
+                "         if(count==1)\n" +
+                "          printf(\"%d \",arr[i]);\n" +
+                "       }\n" +
+                "   }\n" +
+                "   \n" +
+                "   return 0; \n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q37. Removing Duplicate elements from an array\n"+"\n #include <stdio.h>\n" +
+                "\n" +
+                "int duplicates(int arr[], int n)\n" +
+                "{\n" +
+                "   if (n==0 || n==1)\n" +
+                "     return n;\n" +
+                "\n" +
+                "   int temp[n];\n" +
+                "\n" +
+                "   int j = 0;\n" +
+                "   for (int i=0; i<n-1; i++)\n" +
+                "      if (arr[i] != arr[i+1])\n" +
+                "         temp[j++] = arr[i];\n" +
+                "\n" +
+                "   temp[j++] = arr[n-1];\n" +
+                "\n" +
+                "   for (int i=0; i<j; i++)\n" +
+                "     arr[i] = temp[i];\n" +
+                "\n" +
+                "   return j;\n" +
+                "}\n" +
+                "\n" +
+                "// Driver code\n" +
+                "int main()\n" +
+                "{\n" +
+                "   int arr[] = {10, 20, 20, 30, 40, 40, 40, 50, 50};\n" +
+                "   int n = sizeof(arr) / sizeof(arr[0]);\n" +
+                "\n" +
+                "   n = duplicates(arr, n);\n" +
+                "\n" +
+                "   for (int i=0; i<n; i++)\n" +
+                "      printf(\"%d \", arr[i]);\n" +
+                "\n" +
+                "   return 0;\n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q38. Finding Minimum scalar product of two vectors\n"+"\n #include <stdio.h>\n" +
+                "\n" +
+                "int main(){\n" +
+                "\n" +
+                "   int arr1[] = {1, 2, 6, 3, 7};\n" +
+                "   int arr2[] = {10, 7, 45, 3, 7};\n" +
+                "\n" +
+                "   int n = sizeof(arr1)/sizeof(arr1[0]);\n" +
+                "\n" +
+                "\n" +
+                "   //Sort arr1 in ascending order\n" +
+                "   for(int i=0; i<n; i++){\n" +
+                "       for(int j=i+1; j<n; j++){ if(arr1[i]>arr1[j]){\n" +
+                "               int temp = arr1[i];\n" +
+                "               arr1[i] = arr1[j];\n" +
+                "               arr1[j] = temp;\n" +
+                "           }\n" +
+                "       }\n" +
+                "   }\n" +
+                "\n" +
+                "   //Sort arr2 in descending order\n" +
+                "   for(int i=0; i<n; i++){\n" +
+                "       for(int j=i+1; j<n; j++){\n" +
+                "           if(arr2[i]<arr2[j]){\n" +
+                "                int temp = arr2[i];\n" +
+                "                arr2[i] = arr2[j];\n" +
+                "                arr2[j] = temp;\n" +
+                "           }\n" +
+                "       }\n" +
+                "    }\n" +
+                "\n" +
+                "    int product = 0;\n" +
+                "    for(int i=0; i<n; i++)\n" +
+                "        product += arr1[i]*arr2[i];\n" +
+                "\n" +
+                "    printf(\"%d \", product);\n" +
+                "\n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q39. Finding Maximum scalar product of two vectors in an array\n"+"\n #include <stdio.h>\n" +
+                "\n" +
+                "int main(){\n" +
+                "\n" +
+                "   int arr1[] = {1, 2, 6, 3, 7};\n" +
+                "   int arr2[] = {10, 7, 45, 3, 7};\n" +
+                "\n" +
+                "   int n = sizeof(arr1)/sizeof(arr1[0]);\n" +
+                "\n" +
+                "\n" +
+                "   //Sort arr1 in ascending order\n" +
+                "   for(int i=0; i<n; i++){\n" +
+                "       for(int j=i+1; j<n; j++){ \n" +
+                "           if(arr1[i]>arr1[j]){\n" +
+                "               int temp = arr1[i];\n" +
+                "               arr1[i] = arr1[j];\n" +
+                "               arr1[j] = temp;\n" +
+                "           }\n" +
+                "       }\n" +
+                "   }\n" +
+                "\n" +
+                "   //Sort arr2 in ascending order\n" +
+                "   for(int i=0; i<n; i++){\n" +
+                "       for(int j=i+1; j<n; j++){ if(arr2[i]>arr2[j]){\n" +
+                "                int temp = arr2[i];\n" +
+                "                arr2[i] = arr2[j];\n" +
+                "                arr2[j] = temp;\n" +
+                "           }\n" +
+                "       }\n" +
+                "    }\n" +
+                "\n" +
+                "    int product = 0;\n" +
+                "    for(int i=0; i<n; i++)\n" +
+                "        product += arr1[i]*arr2[i];\n" +
+                "\n" +
+                "    printf(\"%d \", product);\n" +
+                "\n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q40. Counting the number of even and odd elements in an array\n"+"\n #include<stdio.h>\n" +
+                "\n" +
+                "int main(){\n" +
+                "\n" +
+                "   int arr[] = {1, 7, 8, 4, 5, 16, 8};\n" +
+                "   int n = sizeof(arr)/sizeof(arr[0]);\n" +
+                "\n" +
+                "   int even_count=0, odd_count=0;\n" +
+                "\n" +
+                "   for(int i=0; i<n; i++){\n" +
+                "     if(arr[i]%2==0)\n" +
+                "       even_count++;\n" +
+                "\n" +
+                "     else \n" +
+                "       odd_count++;\n" +
+                "   }\n" +
+                "   printf(\"Even Elements count : %d \\nOdd Elements count : %d\", even_count, odd_count);\n" +
+                "}\n");
+
+        answerStorage.addAnswer("<------------------------------------------------------>\n");
+        answerStorage.addAnswer("Q41. \n"+"\n \n");
+
+
+
+
         // Get the list of answers and convert it to a string
         ArrayList<String> answers = answerStorage.getAnswers();
         String answersString = TextUtils.join("\n", answers);
