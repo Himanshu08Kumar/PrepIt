@@ -123,4 +123,16 @@ public class mockQuestionAnswer2 {
             "1,4",
             "2, 3, 4"
     };
+    public static String desAns[]={
+            "0 times",
+            "It doesn't matters",
+            "7",
+            "use 3.14f",
+            "Yes",
+            "print 'multiply'",
+            "25",
+            "*pt='\\0';",
+            "1,4",
+            "2, 3, 4"
+    };
 }

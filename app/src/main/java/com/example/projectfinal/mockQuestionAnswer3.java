@@ -88,4 +88,16 @@ public class mockQuestionAnswer3 {
             "The program will print the output 80 80."
 
     };
+    public static String desAns[]={
+            "Structures can have functions as members.",
+            "Dynamic binding",
+            "Derived class pointer cannot point to base class.",
+            "Both A and B.",
+            "Composition",
+            "10 10",
+            "237",
+            "A reference is a constant pointer.",
+            "Both 1 and 2 are incorrect.",
+            "The program will print the output 80 80."
+    };
 }

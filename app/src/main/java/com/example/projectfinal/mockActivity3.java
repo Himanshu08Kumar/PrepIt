@@ -13,13 +13,14 @@ import android.widget.TextView;
 
 public class mockActivity3 extends AppCompatActivity implements View.OnClickListener{
     TextView totalQuestionsTextView;
-    TextView questionTextView;
+    TextView questionTextView, solution;
     Button opt1, opt2, opt3, opt4;
-    Button submitBtn;
+    Button submitBtn, showAns;
 
     int score = 0;
     int totalQuestion = mockQuestionAnswer3.question.length;
     int currentQuestionIndex = 0;
+    int currentAnswerIndex = 0;
     String selectedAnswer = "";
 
     @Override
@@ -29,58 +30,16 @@ public class mockActivity3 extends AppCompatActivity implements View.OnClickList
 
         totalQuestionsTextView =findViewById(R.id.total_question);
         questionTextView = findViewById(R.id.question);
+        solution = findViewById(R.id.solution);
         opt1 = findViewById(R.id.opt1);
         opt2 = findViewById(R.id.opt2);
         opt3 = findViewById(R.id.opt3);
         opt4 = findViewById(R.id.opt4);
         submitBtn =findViewById(R.id.submitBtn);
+        showAns = findViewById(R.id.showAns);
+        solution.setVisibility(View.INVISIBLE);
 
-//        opt1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                for (String answer : correctAnswer) { // loop through the correct answers
-//                    if (selectedAnswer.equals(answer)) { // check if the clicked answer is correct
-//                        opt1.setBackgroundColor(Color.GREEN); // set button color to green
-//                        return; // exit the loop if a match is found
-//                    }
-//                }
-//            }
-//        });
-//
-//        opt2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                for (String answer : correctAnswer) { // loop through the correct answers
-//                    if (selectedAnswer.equals(answer)) { // check if the clicked answer is correct
-//                        opt2.setBackgroundColor(Color.GREEN); // set button color to green
-//                        return; // exit the loop if a match is found
-//                    }
-//                }
-//            }
-//        });
-//
-//        opt3.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                for (String answer : correctAnswer) { // loop through the correct answers
-//                    if (selectedAnswer.equals(answer)) { // check if the clicked answer is correct
-//                        opt3.setBackgroundColor(Color.GREEN); // set button color to green
-//                        return; // exit the loop if a match is found
-//                    }
-//                }
-//            }
-//        });
-//        opt4.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                for (String answer : correctAnswer) { // loop through the correct answers
-//                    if (selectedAnswer.equals(answer)) { // check if the clicked answer is correct
-//                        opt4.setBackgroundColor(Color.GREEN); // set button color to green
-//                        return; // exit the loop if a match is found
-//                    }
-//                }
-//            }
-//        });
+
         opt1.setOnClickListener(this);
         opt2.setOnClickListener(this);
         opt3.setOnClickListener(this);
@@ -98,18 +57,23 @@ public class mockActivity3 extends AppCompatActivity implements View.OnClickList
         opt3.setBackgroundColor(Color.TRANSPARENT);
         opt4.setBackgroundColor(Color.TRANSPARENT);
 
+        showAns.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                solution.setVisibility(View.VISIBLE);
+                showCurrentSolution();
+            }
+        });
+
+
         Button clickButton = (Button) v;
-        if(clickButton.getId() == R.id.submitBtn){
-            if(selectedAnswer.equals(correctAnswer[currentQuestionIndex])) {
+        if(clickButton.getId() == R.id.submitBtn) {
+            if (selectedAnswer.equals(mockQuestionAnswer3.correctAnswer[currentQuestionIndex])) {
                 score++;
             }
-//            for (String answer : correctAnswer) { // loop through the correct answers
-//                    if (selectedAnswer.equals(answer))
-//                        selectedAnswer.setBackgroundColor(Color.GREEN);
-//
-//            }
             currentQuestionIndex++;
             loadNewQuestion();
+            showNextSolution();
 
         }else{
             selectedAnswer = clickButton.getText().toString();
@@ -119,6 +83,19 @@ public class mockActivity3 extends AppCompatActivity implements View.OnClickList
 
     }
 
+
+
+    void showCurrentSolution(){
+        //String currentSolution = boats.desAns[currentAnswerIndex];
+        solution.setText(mockQuestionAnswer3.desAns[currentAnswerIndex]);
+        showAns.setVisibility(View.VISIBLE);
+    }
+    void showNextSolution(){
+        currentAnswerIndex = (currentAnswerIndex + 1) % mockQuestionAnswer3.desAns.length;
+        solution.setVisibility(View.INVISIBLE);
+        showCurrentSolution();
+
+    }
     void loadNewQuestion(){
         if(currentQuestionIndex == totalQuestion){
             finishQuiz();
@@ -131,6 +108,8 @@ public class mockActivity3 extends AppCompatActivity implements View.OnClickList
         opt3.setText(mockQuestionAnswer3.choices[currentQuestionIndex][2]);
         opt4.setText(mockQuestionAnswer3.choices[currentQuestionIndex][3]);
     }
+
+
     void finishQuiz(){
         String passStatus = "";
         if(score > totalQuestion * 0.60){

@@ -38,4 +38,16 @@ public class mockQuestionAnswer4 {
             "True",
             "All of the above."
     };
+    public static String desAns[]={
+            "COBOL programs",
+            "INSERT",
+            "True",
+            "Commercial courier service",
+            "Both A and B.",
+            "Very fast",
+            "Combines the output from multiple queries and must include the same number of columns.",
+            "Manages file operations and is shared on a network.",
+            "True",
+            "All of the above."
+    };
 }

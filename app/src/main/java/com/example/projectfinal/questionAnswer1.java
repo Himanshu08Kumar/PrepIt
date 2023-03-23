@@ -111,4 +111,16 @@ public class questionAnswer1 {
             "four one three two",
             "3 and 4"
     };
+    public static String desAns[]={
+            "Compilation fails",
+            "double",
+            "private synchronized int e;",
+            "x z",
+            "Compilation fails.",
+            "Hello world Finally executing",
+            "java.util.LinkedHashMap",
+            "Java.util.Map",
+            "four one three two",
+            "3 and 4"
+    };
 }
