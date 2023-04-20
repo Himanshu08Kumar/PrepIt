@@ -81,5 +81,143 @@ public class si {
             "Rs. 8820",
             "6.09%",
             "Rs. 1750"
+
+    };
+    public static String desAns[]={
+            "S.I. for 1 year = Rs. (854 - 815) = Rs. 39.\n" +
+                    "\n" +
+                    "S.I. for 3 years = Rs.(39 x 3) = Rs. 117.\n" +
+                    "\n" +
+                    " Principal = Rs. (815 - 117) = Rs. 698.\n",
+
+            "Let the sum invested in Scheme A be Rs. x and that in Scheme B be Rs. (13900 - x).\n" +
+                    "\n" +
+                    "Then,{(x * 14 * 2)/100} +{[(13900 - x) * 11 * 2]/100} = 3508\n "+
+            "28x - 22x = 350800 - (13900 x 22)\n" +
+                    "\n" +
+                    " 6x = 45000\n" +
+                    "\n" +
+                    " x = 7500.\n" +
+                    "\n" +
+                    "So, sum invested in Scheme B = Rs. (13900 - 7500) = Rs. 6400\n",
+
+            "Principal = Rs( 100 * 4016.25)/9 *5 \n"+
+            "= Rs (401625/45) = Rs 8925 \n",
+
+            "Time = (100 * 81)/(450 * 4.5) years = 4 years\n",
+
+            "Let rate = R% and time = R years.\n" +
+                    "\n" +
+                    "Then, ( 1200 * R * R)/100 = 432\n"+
+            " 12R^2 = 432\n" +
+                    "\n" +
+                    " R^2 = 36\n" +
+                    "\n" +
+                    " R = 6.\n",
+
+            "S.I. = Rs. (15500 - 12500) = Rs. 3000.\n" +
+                    "\n" +
+                    "Rate = (100 * 3000)/(12500 * 4) % = 6%\n",
+
+            "Let the sum be Rs. 100. Then,\n" +
+                    "\n" +
+                    "S.I. for first 6 months = Rs (100 * 10 * 1)/(100 * 2) = Rs 5\n"+
+            "S.I. for last 6 months = Rs (105 * 10 * 1)/(100 * 2) = Rs 5.25\n"+
+            "So, amount at the end of 1 year = Rs. (100 + 5 + 5.25) = Rs. 110.25\n" +
+                    "\n" +
+                    " Effective rate = (110.25 - 100) = 10.25%\n",
+
+            "Let the rate be R% p.a.\n" +
+                    "\n" +
+                    "Then,(5000 * R * 2)/100 + (3000 * R * 4)/100 = 2200\n"+
+            " 100R + 120R = 2200\n" +
+                    "\n" +
+                    " R = 2200/220 = 10\n"+
+            "Rate = 10%\n",
+
+            "Let the original rate be R%. Then, new rate = (2R)%.\n" +
+                    "\n" +
+                    "Note:\n" +
+                    "Here, original rate is for 1 year(s); the new rate is for only 4 months i.e. 1/3 year(s).\n"+
+            "(725 * R * 1)/100 + (362.50 * 2R * 1)/(100 * 3) = 33.50\n"+
+            "=> (2175 + 725) R = 33.50 x 100 x 3\n" +
+                    "\n" +
+                    "=> (2175 + 725) R = 10050\n" +
+                    "\n" +
+                    "=> (2900)R = 10050\n"+
+            "R = 10050/2900 = 3.46\n"+
+            "Original rate = 3.46%\n",
+
+            "Principal = Rs(100 * 5400)/(12 * 3) = Rs. 15,000\n",
+
+            "S.I. for 3 years = Rs. (12005 - 9800) = Rs. 2205.\n" +
+                    "\n" +
+                    "S.I. for 5 years = Rs (2205 / 3) * 5 = Rs 3675\n"+
+            " Principal = Rs. (9800 - 3675) = Rs. 6125.\n" +
+                    "\n" +
+                    "Hence, rate =(100 * 3675)/(6125 * 5)% = 12%\n",
+
+            "Let the principal be P and rate of interest be R%.\n" +
+                    "\n" +
+                    " Required ratio = {(P*R*6)/100}/{(P*R*9)/100} = 6PR/9PR\n"+
+            "6/9 = 2 : 3\n",
+
+            "We need to know the S.I., principal and time to find the rate.\n" +
+                    "\n" +
+                    "Since the principal is not given, so data is inadequate.\n",
+
+            "Gain in 2 years = Rs[(5000 * 25/4 * 2/100) - (5000 * 4 * 2)/100]\n"+
+            "= Rs. (625 - 400)\n" +
+                    "= Rs. 225.\n"+
+            "Gain in 1 year = Rs (225/2) = Rs. 112.50\n",
+
+
+            "Rs. 121",
+
+            "625",
+            "Let P = Rs. 100. Then, S.I. Rs. 60 and T = 6 years.\n" +
+                    "\n" +
+                    " R =(100 * 60)/(100 * 6) = 10% p.a\n"+
+            "Now, P = Rs. 12000. T = 3 years and R = 10% p.a.\n" +
+                    "\n" +
+                    " C.I.\t\n" +
+                    "= Rs[ 12000 * {(1+10/100)^3 - 1}]\n"+
+            " = Rs (12000 * 331/1000)\n"+
+            "= 3972\n",
+
+            "Rs. 2.04",
+
+            "2",
+
+            "Amount = Rs[25000 * (1+(12/100))^3]\n"+
+                    "Rs (25000 * 28/25 * 28/25 * 28/25)\n"+
+                    "= Rs 35123.20\n"+
+                    "C.I. = Rs. (35123.20 - 25000) \n"+
+                    "Rs. 10123.20\n",
+
+            "Let the rate be R% p.a.\n" +
+                    "\n" +
+                    "Then, 1200 * (1 + R/100)^2 = 1348.32\n"+
+            "(1 + R/100)^2 = 134832/120000 = 11236/10000\n"+
+            "(1 + R/100)^2 = (106/100)^2\n"+
+            "1 + R/100 = 106/100\n"+
+            "R = 6%\n",
+
+            "P(1 + 20/100)^n > 2P => (6/5)^n > 2\n"+
+            "Now, (6/5 * 6/5 * 6/5 * 6/5) >  2\n"+
+            "so, n = 4 years\n",
+
+            "Amount = Rs[8000 * (1 + 5/100)^2]\n"+
+            "= Rs (8000 * 21/20 * 21/20)\n"+
+            "= Rs 8820\n",
+
+            "Amount of Rs 100 for 1 year when compounded half - yearly \n"+
+            "= Rs [100 * (1 + 3/100)^2] = Rs 106.09\n"+
+            "Effective rate = (106.09 - 100)% = 6.09%\n",
+
+            "C.I = Rs [4000 * (1+10/100)^2 - 40000]\n"+
+                    "= Rs (4000 * 11/10 * 11/10 - 4000)\n"+
+                    "= Rs 840\n"+
+                    "Sum = Rs (420*100)/(3*8) = Rs 1750\n"
     };
 }

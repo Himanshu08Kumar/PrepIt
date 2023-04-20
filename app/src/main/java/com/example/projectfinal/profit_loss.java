@@ -55,4 +55,109 @@ public class profit_loss {
             "5%"
 
     };
+
+    public static String desAns[]={
+            "Cost Price (C.P.) = Rs. (4700 + 800) = Rs. 5500.\n" +
+                    "\n" +
+                    "Selling Price (S.P.) = Rs. 5800.\n" +
+                    "\n" +
+                    "Gain = (S.P.) - (C.P.) = Rs.(5800 - 5500) = Rs. 300.\n" +
+                    "\n" +
+                    "Gain % = (300/5500 * 100)% = 5(5/11)%\n",
+
+            "Let C.P. of each article be Re. 1 C.P. of x articles = Rs. x.\n" +
+                    "\n" +
+                    "S.P. of x articles = Rs. 20.\n" +
+                    "\n" +
+                    "Profit = Rs. (20 - x).\n"+
+            "[(20-x)/x * 100 = 25]\n"+
+            "2000 - 100x = 25x\n" +
+                    "\n" +
+                    "125x = 2000\n" +
+                    "\n" +
+                    " x = 16\n",
+
+            "Let C.P. be Rs. x and S.P. be Rs. y.\n" +
+                    "\n" +
+                    "Then, 3(y - x) = (2y - x)    y = 2x.\n" +
+                    "\n" +
+                    "Profit = Rs. (y - x) = Rs. (2x - x) = Rs. x.\n" +
+                    "\n" +
+                    " Profit % = (x/x * 100)% = 100%\n",
+
+            "Let C.P.= Rs. 100. Then, Profit = Rs. 320, S.P. = Rs. 420.\n" +
+                    "\n" +
+                    "New C.P. = 125% of Rs. 100 = Rs. 125\n" +
+                    "\n" +
+                    "New S.P. = Rs. 420.\n" +
+                    "\n" +
+                    "Profit = Rs. (420 - 125) = Rs. 295.\n" +
+                    "\n" +
+                    " Required percentage = (295/420 * 100)% = 1475/21 %\n"+
+            "= 70% (Approximately)\n",
+
+            "C.P. of 6 toffees = Re. 1\n" +
+                    "\n" +
+                    "S.P. of 6 toffees = 120% of Re. 1 = Rs 6/5 \n"+
+            "For Rs 6/5, toffees sold = 6\n"+
+            "For Re. 1, toffees sold = (6 * 5/6) = 5\n",
+
+            "Let C.P. be Rs. x.\n" +
+                    "\n" +
+                    "Then, (1920 - x)/x * 100 = (x - 1280)/x * 100\n"+
+            " 1920 - x = x - 1280\n" +
+                    "\n" +
+                    " 2x = 3200\n" +
+                    "\n" +
+                    " x = 1600\n" +
+                    "\n" +
+                    " Required S.P. = 125% of Rs. 1600 = Rs(125/100 * 1600)\n"+
+            "= Rs 2000\n",
+
+            "C.P. = Rs (100/122.5 * 392) = Rs (1000/1225 * 392)\n"+
+            "=Rs 320\n"+
+            "Profit = Rs. (392 - 320) = Rs. 72.",
+
+            "S.P. = 85% of Rs. 1400 = Rs(85/100 * 1400) = Rs. 1190\n",
+
+            "Cost Price of 1 toy = Rs(375/12) = Rs 31.25\n"+
+            "Selling Price of 1 toy = Rs. 33\n" +
+                    "\n" +
+                    "So, Gain = Rs. (33 - 31.25) = Rs. 1.75\n" +
+                    "\n" +
+                    " Profit % = (1.75/31.25 * 100)% = 28/5 % = 5.6%\n",
+
+            "Suppose, number of articles bought = L.C.M. of 6 and 5 = 30.\n" +
+                    "\n" +
+                    "C.P. of 30 articles = Rs (5/6 * 30) = Rs 25\n"+
+            "S.P. of 30 articles = Rs (6/5 * 30) = Rs 36\n"+
+            "Gain % = (11/25 * 100)% = 44%\n",
+
+            "(C.P. of 17 balls) - (S.P. of 17 balls) = (C.P. of 5 balls)\n" +
+                    "\n" +
+                    " C.P. of 12 balls = S.P. of 17 balls = Rs.720.\n" +
+                    "\n" +
+                    " C.P. of 1 ball = Rs (720/12) = Rs 60\n",
+
+            "85 : 18700 = 115 : x\n" +
+                    "\n" +
+                    " x =(18700 * 115)/85 = 25300\n"+
+            "Hence, S.P. = Rs. 25,300.\n",
+
+            "C.P. of 1 orange = Rs. (350/100) = Rs 3.50\n"+
+            "S.P. of 1 orange = Rs (48/12) = Rs 4\n"+
+            "Gain % = (0.50 * 100)/3.50 % = (100/7)% = 14(2/7)% \n",
+
+            "C.P. of 1st transistor = Rs.(100 * 840)/120 = Rs 700\n"+
+            "C.P. of 2nd transistor = Rs.(100 * 960)/96 = Rs 1000\n"+
+            "So, total C.P. = Rs. (700 + 1000) = Rs. 1700.\n" +
+                    "\n" +
+                    "Total S.P. = Rs. (840 + 960) = Rs. 1800.\n"+
+            "Gain % = (100 * 100)/1700 % = 5(15/17)%\n",
+
+            "C.P. of 56 kg rice = Rs. (26 x 20 + 30 x 36) = Rs. (520 + 1080) = Rs. 1600.\n" +
+                    "\n" +
+                    "S.P. of 56 kg rice = Rs. (56 x 30) = Rs. 1680.\n" +
+                    "Gain = (80 * 100)/1600 % = 5%\n"
+    };
 }

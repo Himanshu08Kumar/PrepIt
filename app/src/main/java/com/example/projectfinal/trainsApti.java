@@ -70,4 +70,182 @@ public class trainsApti {
             "79.2 km/hr"
 
     };
+    public static String desAns[]={
+            "Speed =(60 * 5/18)m/sec\n"+
+            "=(50/3)m/sec\n"+
+            "Length of the train = (Speed x Time).\n"+
+            " Length of the train = (50/3 * 9)m = 150 m \n",
+
+            "Speed of the train relative to man = (125/10) m/sc\n"+
+            " = 25/2 m/sec\n"+
+            "=(25/2 * 18/5) km/hr\n"+
+            "= 45 km/hr.\n" +
+                    "\n" +
+                    "Let the speed of the train be x km/hr. Then, relative speed = (x - 5) km/hr.\n" +
+                    "\n" +
+                    " x - 5 = 45 \n"+
+                    "x = 50 km/hr.\n",
+
+            "Speed = (45 * 5/18)m/sec = (25/2) m/sec\n"+
+            "Time = 30 sec.\n" +
+                    "\n" +
+                    "Let the length of bridge be x metres.\n" +
+                    "\n" +
+                    "Then, (130 + x)/30 = 25/2\n"+
+            "2(130 + x) = 750\n" +
+                    "\n" +
+                    " x = 245 m.\n",
+
+            "Let the speeds of the two trains be x m/sec and y m/sec respectively.\n" +
+                    "\n" +
+                    "Then, length of the first train = 27x metres,\n" +
+                    "\n" +
+                    "and length of the second train = 17y metres.\n"+
+            "(27x+17y)/(x+y) = 23\n"+
+            "27x + 17y = 23x + 23y\n" +
+                    "\n" +
+                    " 4x = 6y\n"+
+            "x/y = 3/2\n",
+
+            "Speed = (54 * 5/18) m/sec = 15 m/sec\n"+
+            "Length of the train = (15 x 20)m = 300 m.\n" +
+                    "\n" +
+                    "Let the length of the platform be x metres.\n" +
+                    "\n" +
+                    "Then, (x + 300)/36 = 15\n"+
+            "x + 300 = 540\n" +
+                    "\n" +
+                    " x = 240 m\n",
+
+            "Speed = (240/24) m/sec = 10 m/sec\n"+
+            "Required time = (240+650)/10 sec = 89 sec\n",
+
+            "Let the length of each train be x metres.\n" +
+                    "\n" +
+                    "Then, distance covered = 2x metres.\n" +
+                    "\n" +
+                    "Relative speed = (46 - 36) km/hr"+
+            "=(10 * 5/18) m/sec\n"+
+            "(25/9) m/sec\n"+
+            "2x / 36 = 25 / 9 \n"+
+            "2x = 100\n" +
+                    "\n" +
+                    " x = 50\n",
+
+            "Formula for converting from km/hr to m/s:   X km/hr = (x * 5/18) m/s\n"+
+            "Therefore, Speed = (45 * 5/18) m/sec = 25/2 m/sec\n"+
+                    "Total distance to be covered = (360 + 140) m = 500 m.\n" +
+                    "\n" +
+                    "Formula for finding Time = (Distance / Speed)\n"+
+            "Required time =(500*2/25) sec = 40 sec\n",
+
+            "Relative speed = (60+ 90) km/hr\n" +
+                    "\n" +
+                    "   =(150 * 5/18) m/sec\n"+
+            "(125/3) m/sec\n"+
+            "Distance covered = (1.10 + 0.9) km = 2 km = 2000 m.\n" +
+                    "\n" +
+                    "Required time =(2000 * 3/125) sec = 48 sec\n",
+
+            "Speed of train relative to jogger = (45 - 9) km/hr = 36 km/hr.\n"+
+            "(36 * 5/18) m/sec\n"+
+            "= 10 m/sec.\n" +
+                    "\n" +
+                    "Distance to be covered = (240 + 120) m = 360 m.\n" +
+                    "\n" +
+                    " Time taken = (360/10)sec = 36 sec\n",
+
+            "Relative speed = (120 + 80) km/hr\n"+
+            "(200 * 5/18) m/sec\n"+
+            "(500/9) m/sec\n"+
+            "Let the length of the other train be x metres.\n" +
+                    "\n" +
+                    "Then, (x + 270)/9 = 500 / 9\n"+
+            " x + 270 = 500\n" +
+                    "\n" +
+                    " x = 230.\n",
+
+            "Speed =(72 * 5/18) m/sec = 20 m/sec\n"+
+            "Time = 26 sec.\n" +
+                    "\n" +
+                    "Let the length of the train be x metres.\n" +
+                    "\n" +
+                    "Then, (x+250)/26 = 20\n"+
+            "x + 250 = 520\n" +
+                    "\n" +
+                    " x = 270.\n",
+
+            "Let the speed of the slower train be x m/sec.\n" +
+                    "\n" +
+                    "Then, speed of the faster train = 2x m/sec.\n" +
+                    "\n" +
+                    "Relative speed = (x + 2x) m/sec = 3x m/sec\n"+
+            "(100+100)/8 = 3x\n"+
+            "24x = 200\n"+
+            "x = 25/3\n"+
+            "So, speed of the faster train = (50/3) m/sec\n"+
+            "(50/3 * 18/5) km/hr\n"+
+            "60 km/hr\n",
+
+            "Relative speed = (60 + 40) km/hr \n"+
+            "=( 100 * 5/18) m/sec = (250/9) m/sec\n"+
+            "Distance covered in crossing each other = (140 + 160) m = 300 m.\n" +
+                    "\n" +
+                    "Required time =(300 * 9/250) sec\n"+
+            "= 54/5 sec = 10.8 sec\n",
+
+            "Speed of train relative to man = (60 + 6) km/hr = 66 km/hr.\n" +
+                    "\n" +
+                    "   =(66 * 5/18) m/sec\n"+
+            "= (55/3) m/sec\n"+
+            "Time taken to pass the man =(110 * 3/55) sec = 6 sec\n",
+
+            "\n" +
+                    "Total distance covered\t\n" +
+                    "= ( 7/2 + 1/4) miles\n"+
+            "= 15/4 miles\n"+
+            "Time Taken= (15/4*75) hrs = 1/20 hrs\n"+
+            "=(1/20 * 60) min\n"+
+            "= 3 min\n",
+
+            "Speed = (78*5/18) m/sec = (65/3) m/sec\n"+
+            "Time = 1 minute = 60 seconds.\n" +
+                    "\n" +
+                    "Let the length of the tunnel be x metres.\n" +
+                    "\n" +
+                    "Then,(800+x)/60 = 65/3\n"+
+            "=>3(800 + x) = 3900\n" +
+                    "\n" +
+                    "=> x = 500.\n",
+
+            "Speed =(300/18) m/sec = (50/3) m/sec\n"+
+            "Let the length of the platform be x metres.\n" +
+                    "\n" +
+                    "Then, (x+300)39 = 50/3\n"+
+            "=>3(x + 300) = 1950\n" +
+                    "\n" +
+                    "=> x = 350 m.\n",
+
+            "Let the length of the train be x metres and its speed by y m/sec.\n" +
+                    "\n" +
+                    "Then, x/y = 15 => y = x/15\n"+
+            "x+100/25 = x/15\n"+
+            "=>15(x + 100) = 25x\n" +
+                    "\n" +
+                    "=> 15x + 1500 = 25x\n" +
+                    "\n" +
+                    "=> 1500 = 10x\n" +
+                    "\n" +
+                    "=> x = 150 m\n",
+
+            "Let the length of the train be x metres and its speed by y m/sec.\n" +
+                    "\n" +
+                    "Then, x/y = 8 => x = 8y\n"+
+                    "Now, (x+264)/20 = y\n"+
+                    "8y + 264 = 20y\n" +
+                    "\n" +
+                    "=> y = 22.\n" +
+                    "\n" +
+                    "Therefore Speed = 22 m/sec =(22 * 18/5) km/hr = 79.2 km/hr\n"
+    };
 }
