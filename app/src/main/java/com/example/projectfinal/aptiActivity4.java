@@ -11,13 +11,14 @@ import android.widget.TextView;
 
 public class aptiActivity4 extends AppCompatActivity implements View.OnClickListener{
     TextView totalQuestionsTextView;
-    TextView questionTextView;
+    TextView questionTextView, solution;
     Button opt1, opt2, opt3, opt4;
-    Button submitBtn;
+    Button submitBtn, showAns;
 
     int score = 0;
     int totalQuestion = percentage.question.length;
     int currentQuestionIndex = 0;
+    int currentAnswerIndex = 0;
     String selectedAnswer = "";
 
 
@@ -28,11 +29,14 @@ public class aptiActivity4 extends AppCompatActivity implements View.OnClickList
 
         totalQuestionsTextView =findViewById(R.id.total_question);
         questionTextView = findViewById(R.id.question);
+        solution = findViewById(R.id.solution);
         opt1 = findViewById(R.id.opt1);
         opt2 = findViewById(R.id.opt2);
         opt3 = findViewById(R.id.opt3);
         opt4 = findViewById(R.id.opt4);
         submitBtn =findViewById(R.id.submitBtn);
+        showAns = findViewById(R.id.showAns);
+        solution.setVisibility(View.INVISIBLE);
 
 
         opt1.setOnClickListener(this);
@@ -52,15 +56,23 @@ public class aptiActivity4 extends AppCompatActivity implements View.OnClickList
         opt3.setBackgroundColor(Color.TRANSPARENT);
         opt4.setBackgroundColor(Color.TRANSPARENT);
 
+        showAns.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                solution.setVisibility(View.VISIBLE);
+                showCurrentSolution();
+            }
+        });
+
+
         Button clickButton = (Button) v;
         if(clickButton.getId() == R.id.submitBtn) {
             if (selectedAnswer.equals(percentage.correctAnswer[currentQuestionIndex])) {
-
                 score++;
             }
             currentQuestionIndex++;
             loadNewQuestion();
-
+            showNextSolution();
 
         }else{
             selectedAnswer = clickButton.getText().toString();
@@ -70,6 +82,19 @@ public class aptiActivity4 extends AppCompatActivity implements View.OnClickList
 
     }
 
+
+
+    void showCurrentSolution(){
+        //String currentSolution = percentage.desAns[currentAnswerIndex];
+        solution.setText(percentage.desAns[currentAnswerIndex]);
+        showAns.setVisibility(View.VISIBLE);
+    }
+    void showNextSolution(){
+        currentAnswerIndex = (currentAnswerIndex + 1) % percentage.desAns.length;
+        solution.setVisibility(View.INVISIBLE);
+        showCurrentSolution();
+
+    }
     void loadNewQuestion(){
         if(currentQuestionIndex == totalQuestion){
             finishQuiz();
@@ -82,6 +107,8 @@ public class aptiActivity4 extends AppCompatActivity implements View.OnClickList
         opt3.setText(percentage.choices[currentQuestionIndex][2]);
         opt4.setText(percentage.choices[currentQuestionIndex][3]);
     }
+
+
     void finishQuiz(){
         String passStatus = "";
         if(score > totalQuestion * 0.60){
