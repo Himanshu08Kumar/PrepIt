@@ -3,5 +3,168 @@
 
     <string name="title1">TCS</string>
     <string name="jd1">Software Engineer</string>
-    <string name="details1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</string>
+    <string name="details1">TCS is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</string>
+
+    <string name="title2">MindTree</string>
+    <string name="jd2">Graduate Engineer Trainee / Post-Graduate Engineer Trainee</string>
+    <string name="details2">Compensation:  Decided by the Company based on the score and the interview process INR 4.00 LPA / 5.00 LPA / 6.50 LPA, No Service Agreement/Bond\n\n
+
+Eligibility Criteria : B.Tech / M.Tech (All Branches)\n
+·       2023 Batch of B.Tech/M.Tech (All Branches of Engineering)\n
+
+·       Consistent academic records of 60%+ in 10th, 12th /Diploma, UG, and PG (aggregate across all subjects)\n
+
+·       Appropriate CGPA to percentage conversion to be considered as per the respective university norms\n
+
+·       Initial results (% scores) declared would be considered for students awaiting re-evaluation results\n
+
+·       There must be no standing arrears in current education\n
+
+·       Should be an Indian national\n
+
+·       At the time of joining all recruits should have 60% aggregate (All subjects taken into consideration), in the current pursuing degree with no standing arrears\n
+
+·       As a future IT professional flexibility towards working from Mindtree’s development centers across the country, work duration, skills training, and domain are essential.</string>
+
+    <string name="title3">HCL Technologies</string>
+    <string name="jd3">Technical Consultant</string>
+    <string name="details3">CTC: INR 4,50,000 to INR 6,00,000 PA\n\n
+        Eligible Branches: B.Tech CSE (All Specializations) /ISE/ECE/EEE/R and A, M.Tech CSE All Specialization.\n\n
+        Batch Size (B. Tech AWS) –\n
+
+· Eligible Batch Size (Candidate with 70% above all through academics ,Male Candidate, Certificate(AWS and GCP) –\n
+
+· Eligible Batch Size (Candidate with 70% above all through academics ,Female Candidate, Certificate(AWS and GCP) -\n\n
+
+Batch Size (B. Tech GCP) –\n
+
+· Eligible Batch Size (Candidate with 70% above all through academics, Male Candidate, Cyber Security) –\n
+
+· Eligible Batch Size (Candidate with 70% above all through academics, Female Candidate ,Cyber Security)\n
+    </string>
+
+    <string name="title4">Capgemini</string>
+    <string name="jd4">SOFTWARE ANALYST</string>
+    <string name="details4">Department: M.Tech / B.Tech (All Branches) 2023 batch.\n\n
+CTC: 4.25 LPA.\n\n
+Eligibility: M.Tech / B.Tech (All Branches) 2023 batch.\n\n
+    Responsibilities:\n
+Design, build and maintain efficient, reusable, and reliable code\n
+Integration of user-facing elements with server-side logic\n
+Identify bottlenecks and bugs, and devise solutions to these problems\n
+Help maintain code quality, organization, and technical documentation\n
+Contribute to all phases of the development lifecycle.\n
+Drive continuous adoption and integration of relevant new technologies into the design.\n
+    </string>
+
+    <string name="title5">Infosys</string>
+    <string name="jd5">Java Software Engineer</string>
+    <string name="details5">Role - Team Lead\n\n
+
+Responsibilities:-\n
+
+Experience with Java\n
+Minimum 3 years of experience with spring boot.\n
+Minimum 1 year of experience with Microservice.\n\n
+
+
+Technical Skills:-\njava, spring-boot. Spring, REST JSON/XML, SOAP. Unit testing framework e.g., JUnit. Knowledge of GCP is desirable.\n
+
+Skills:- Communication Skills</string>
+
+    <string name="title6">Cisco</string>
+    <string name="jd6">DevOps Engineer</string>
+    <string name="details6">Location: PUNE, MH, INDIA\n
+
+Experience: Fresher or 1 years\n
+
+Qualifications: BE/ B.Tech/ M.Tech: 60% through out\n
+
+Probation: 6 months\n
+
+Commitment : 3 yrs\n\n
+        Keyskills:\n
+
+Linux, Jenkins, Docker, Ansible, Continuous Integration, GIT, Monitoring tools, AWS, Networking, Security,
+
+Nginx, Shell script, K8S (Kubernetes)
+
+    </string>
+
+    <string name="title7">Deloitte</string>
+    <string name="jd7">Back-End Developer</string>
+    <string name="details7">Deloitte is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</string>
+
+    <string name="title8">Tebixa Technologies</string>
+    <string name="jd8">Wordpress Developer</string>
+    <string name="details8">Role :Full Stack Developer\n
+
+Industry Type: IT Services And Consulting\n
+
+Department Engineering - Software And QA\n
+
+Employment Type:Full Time, Permanent\n
+
+Role Category:Software Development\n
+
+Education\n
+
+UG :B.Sc in Computers, B.Tech/B.E. in Computers, BCA in Any Specialization\n
+
+Key Skills:\n
+
+Wordpress ,CMS,CSS,PHP,HTML\n
+
+Communication Skills, MySQL\n
+
+Job Types: Full-time, Regular / Permanent, Fresher\n
+
+Salary: ₹15,000.00 - ₹25,000.00 per month</string>
+
+    <string name="title9">CloudThat Technologies Pvt. Ltd.</string>
+    <string name="jd9">Research Intern (Tech Consulting)\n
+Research Intern ( Training )</string>
+    <string name="details9">1. Research Intern (Tech Consulting)\n
+
+Job Description:-\n
+
+Deep-dive into Amazon, Azure, and Google Cloud Services\n
+Automation on Cloud\n
+Working towards achieving respective Cloud Certifications\n
+Consistently strive to acquire new skills on Cloud, DevOps, Big Data, AI and ML technologies\n
+Performing, researching and documenting Cloud POCs\n
+Design, deploy and maintain Cloud infrastructure for Clients – Domestic and International\n\n\n
+Job Requirements:-\n
+
+
+
+Basic networking, Linux, RDBMS\n
+Clear object-oriented programming concepts\n
+Good verbal communication\n
+Proficiency with any one of the programming languages - Java, Python, note.js\n
+Knowledge in Cloud Concepts\n\n
+Key Personal Attributes:-\n
+
+
+Ability to work independently with minimal direction\n
+Proactiveness\n
+Relentless learner and the passion to pick up new technologies.\n\n\n
+
+2. Research Intern (Training)\n\n
+
+Job Responsibilities:-\n
+
+Prepare documentation for various trainings.\n
+Ability to research, comprehend, and apply new training methodologies and information about the software we sell and train on.\n
+Conduct technical training sessions covering the GCP Cloud services offered by providers.\n
+Conduct professional corporate training for CloudThat clients across the globe through in person and online session\n
+Consulting for CloudThat’s clients all over the globe\n
+B.Tech/M.Tech or a related field or equivalent experience\n\n\n
+Good to Have:-\n
+
+Knowledge of any cloud technology like (GCP/ AWS/ Azure).\n
+Certification in GCP would be a bonus.\n
+Specialization in specific field like AI/ML, Security, Data, Cloud Computing, Networking, Full Stack Development will be added bonus</string>
+
+
 </resources>

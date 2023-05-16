@@ -31,7 +31,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
         android:columnCount="1"
-        android:rowCount="4">
+        android:rowCount="6">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/test1"
@@ -155,6 +155,38 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Database"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/test5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#29FFFFFF"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Networking"
                     android:textSize="25dp"
                     android:textAlignment="center"
                     android:textColor="#fff"

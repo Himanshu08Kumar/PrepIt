@@ -96,7 +96,78 @@ public class mockQuestionAnswer2 {
                     "1:\tThere is no difference in the declarations and both serve the same purpose.\n" +
                     "2:\tp is a non-const pointer pointing to a non-const string, whereas a is a const pointer pointing to a non-const pointer.\n" +
                     "3:\tThe pointer p can be modified to point to another string, whereas the individual characters within array a can be changed.\n" +
-                    "4:\tIn both cases the '\\0' will be added at the end of the string \"Sanjay\".\n"
+                    "4:\tIn both cases the '\\0' will be added at the end of the string \"Sanjay\".\n",
+
+            "Q11. What will be the output of the program?\n"+
+                    "#include<stdio.h>\n" +
+                    "int main()\n" +
+                    "{\n" +
+                    "    int k, num=30;\n" +
+                    "    k = (num>5 ? (num <=10 ? 100 : 200): 500);\n" +
+                    "    printf(\"%d\\n\", num);\n" +
+                    "    return 0;\n" +
+                    "}\n",
+            "Q12. Point out the error in the following program\n"+
+            "#include<stdio.h>\n" +
+                    "int main()\n" +
+                    "{\n" +
+                    "    struct emp\n" +
+                    "    {\n" +
+                    "        char name[20];\n" +
+                    "        float sal;\n" +
+                    "    };\n" +
+                    "    struct emp e[10];\n" +
+                    "    int i;\n" +
+                    "    for(i=0; i<=9; i++)\n" +
+                    "        scanf(\"%s %f\", e[i].name, &e[i].sal);\n" +
+                    "    return 0;\n" +
+                    "}\n",
+            "Q13. The keyword used to transfer control from a function back to the calling function is\n",
+            "Q14. Which of the following statements are correct about the function?\n",
+            "Q15. Which of the statements is correct about the program?\n"+
+            "#include<stdio.h>\n" +
+                    "\n" +
+                    "int main()\n" +
+                    "{\n" +
+                    "    float a=3.14;\n" +
+                    "    char *j;\n" +
+                    "    j = (char*)&a;\n" +
+                    "    printf(\"%d\\n\", *j);\n" +
+                    "    return 0;\n" +
+                    "}\n",
+            "Q16. Which of the following statements are correct about an array?\n" +
+                    "1:\tThe array int num[26]; can store 26 elements.\n" +
+                    "2:\tThe expression num[1] designates the very first element in the array.\n" +
+                    "3:\tIt is necessary to initialize the array at the time of declaration.\n" +
+                    "4:\tThe declaration num[SIZE] is allowed if SIZE is a macro.\n",
+            "Q17. The library function used to find the last occurrence of a character in a string is\n",
+            "Q18. If char=1, int=4, and float=4 bytes size, What will be the output of the program ?\n" +
+                    "#include<stdio.h>\n" +
+                    "\n" +
+                    "int main()\n" +
+                    "{\n" +
+                    "    char ch = 'A';\n" +
+                    "    printf(\"%d, %d, %d\", sizeof(ch), sizeof('A'), sizeof(3.14f));\n" +
+                    "    return 0;\n" +
+                    "}\n",
+            "Q19. What will be the output of the program ?\n" +
+                    "#include<stdio.h>\n" +
+                    "\n" +
+                    "int main()\n" +
+                    "{\n" +
+                    "    char str[] = \"Nagpur\";\n" +
+                    "    str[0]='K';\n" +
+                    "    printf(\"%s, \", str);\n" +
+                    "    str = \"Kanpur\";\n" +
+                    "    printf(\"%s\", str+1);\n" +
+                    "    return 0;\n" +
+                    "}\n",
+            "Q20. What is the output of the program?\n" +
+                    "typedef struct data;\n" +
+                    "{\n" +
+                    "    int x;\n" +
+                    "    sdata *b;\n" +
+                    "}sdata;\n"
 
     };
     public static String choices[][]={
@@ -109,7 +180,17 @@ public class mockQuestionAnswer2 {
             {"5","25","125","Garbage value"},
             {"*pt='';","pt='\\0';","pt='\\n';\n","*pt='\\0';"},
             {"1","1,4","2,3","2,4"},
-            {"1, 2","2, 3, 4","3, 4","2, 3"}
+            {"1, 2","2, 3, 4","3, 4","2, 3"},
+            {"200","30","100","35"},
+            {"Suspicious pointer conversion","Floating point formats not linked (Run time error)","Cannot use scanf() for structures","Strings cannot be nested inside structures"},
+            {"switch","goto","go back","return"},
+            {"The function calculates the value of 1 raised to power num.","The function calculates the square root of an integer","The function calculates the factorial value of an integer","None of above"},
+            {"It prints ASCII value of the binary number present in the first byte of a float variable a","It prints character equivalent of the binary number present in the first byte of a float variable a","It will print 3","It will print a garbage value"},
+            {"1","1,4","2,3","2,4"},
+            {"strnstr()","laststr()","strrchr()","strstr()"},
+            {"1, 2, 4","1, 4, 4","2, 2, 4","2, 4, 8"},
+            {"Kagpur, Kanpur","Nagpur, Kanpur","Kagpur, anpur","Error"},
+            {"Error: Declaration missing ';'","Error: in typedef","No error","None of above"}
     };
     public static String correctAnswer[]={
             "0 times",
@@ -121,7 +202,17 @@ public class mockQuestionAnswer2 {
             "25",
             "*pt='\\0';",
             "1,4",
-            "2, 3, 4"
+            "2, 3, 4",
+            "30",
+            "Floating point formats not linked (Run time error)",
+            "return",
+            "The function calculates the factorial value of an integer",
+            "It prints ASCII value of the binary number present in the first byte of a float variable a",
+            "1,4",
+            "strrchr()",
+            "1, 4, 4",
+            "Error",
+            "Error: Declaration missing ';'"
     };
     public static String desAns[]={
             "0 times",
@@ -133,6 +224,16 @@ public class mockQuestionAnswer2 {
             "25",
             "*pt='\\0';",
             "1,4",
-            "2, 3, 4"
+            "2, 3, 4",
+            "30",
+            "Floating point formats not linked (Run time error)",
+            "return",
+            "The function calculates the factorial value of an integer",
+            "It prints ASCII value of the binary number present in the first byte of a float variable a",
+            "1,4",
+            "strrchr()",
+            "1, 4, 4",
+            "Error",
+            "Error: Declaration missing ';'"
     };
 }

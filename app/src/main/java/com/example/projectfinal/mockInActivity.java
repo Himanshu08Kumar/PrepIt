@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class mockInActivity extends AppCompatActivity implements View.OnClickListener {
-    public CardView test1, test2, test3, test4;
+    public CardView test1, test2, test3, test4, test5;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,11 +18,13 @@ public class mockInActivity extends AppCompatActivity implements View.OnClickLis
         test2 = (CardView) findViewById(R.id.test2);
         test3 = (CardView) findViewById(R.id.test3);
         test4 = (CardView) findViewById(R.id.test4);
+        test5 = (CardView) findViewById(R.id.test5);
 
         test1.setOnClickListener(this);
         test2.setOnClickListener(this);
         test3.setOnClickListener(this);
         test4.setOnClickListener(this);
+        test5.setOnClickListener(this);
 
     }
     public void onClick(View v) {
@@ -42,6 +44,10 @@ public class mockInActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.test4:
                 i= new Intent(this, mockActivity4.class);
+                startActivity(i);
+                break;
+            case R.id.test5:
+                i= new Intent(this, mockActivity5.class);
                 startActivity(i);
                 break;
 
